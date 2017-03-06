@@ -14,13 +14,13 @@ class kessel:
         """Displays a random kessel."""
 
         # TODO make bigger list
-        kessel = ["http://i.imgur.com/HpXZPZ1.gifv",
-               "http://i.imgur.com/KsCh67n.gifv",
-               "http://i.imgur.com/HIZfEpX.gifv",
-               "http://i.imgur.com/uzubEP8.gifv",
+        kessel = ["http://i.imgur.com/HpXZPZ1.gif",
+               "http://i.imgur.com/KsCh67n.gif",
+               "http://i.imgur.com/HIZfEpX.gif",
+               "http://i.imgur.com/uzubEP8.gif",
                "http://i.imgur.com/SRQYQjy.jpg",
-               "http://i.imgur.com/clPnnul.gifv",
-               "http://i.imgur.com/yXgXd4W.gifv"]
+               "http://i.imgur.com/clPnnul.gif",
+               "http://i.imgur.com/yXgXd4W.gif"]
 
         kessel = choice(kessel)
 
