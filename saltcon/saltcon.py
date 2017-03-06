@@ -83,6 +83,7 @@ class SALTCON:
                         "exist at this time.")
             instructions = ("- Partipaction in online games is encouraged\n"
                             "- Remain vigilant of insider threats\n"
+			    "- Think about taking a nice trip to see Sandy\n"
                             "- Report all suspicious activity")
         elif level == '4':
             color = 0x00ff00
@@ -92,7 +93,7 @@ class SALTCON:
             instructions = ("- Inhale deeply through your nose and "
                             "count to 5\n"
                             "- Take short breaks between games\n"
-							"- Avoid interactions with Arizeen\n"
+			    "- Avoid interactions with Arizeen\n"
                             "- Do not encourage trolls")
         elif level == '3':
             color = 0xffff00
@@ -101,7 +102,7 @@ class SALTCON:
             subtitle = 'Sodium levels may exceed OSHA exposure limits.'
             instructions = ("- Use extreme caution when playing ranked games\n"
                             "- Log off non-essential communication channels\n"
-							"- Stay out of Arizeen's Basement\n"
+			    "- Stay out of Arizeen's Basement\n"
                             "- Put on your big boy pants")
         elif level == '2':
             color = 0xff0000
@@ -110,7 +111,8 @@ class SALTCON:
             subtitle = 'Sodium levels are approaching critical mass'
             instructions = ("- Avoid ranked game modes at all costs\n"
                             "- Mute all hostile voice channels\n"
-							"- Call Sandy and tell her you love her\n"
+			    "- Call Sandy and tell her you love her\n"
+			    "- Stock up on wings\n"
                             "- Queue up some relaxing jazz music")
         elif level == '1':
             color = 0xffffff
