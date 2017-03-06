@@ -24,7 +24,7 @@ class kessel:
 
         kessel = choice(kessel)
 
-        kesselsay = ["kessel!!11", "Kessel Intensification Protocol Engaged", "Neeeeeeeeeeeeeeeeeeeeeeepppppppppp",
+        kesselsay = ["kessel!!11", "Kessel Intensification Protocol Engaged", "Keeeeeeesssssssel",
                   "kessel kessel :P", "*intense kesseling*", "I ran out of Kessel so here is some more"]
         kesselsay = choice(kesselsay)
 
@@ -44,4 +44,4 @@ class kessel:
 
 
 def setup(bot):
-bot.add_cog(kessel(bot))
+bot.add_cog(kessel(bot))eeee
