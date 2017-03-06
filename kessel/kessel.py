@@ -44,4 +44,4 @@ class kessel:
 
 
 def setup(bot):
-bot.add_cog(kessel(bot))eeee
+     bot.add_cog(kessel(bot))
