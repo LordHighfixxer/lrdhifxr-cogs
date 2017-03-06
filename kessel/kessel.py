@@ -25,6 +25,10 @@ class kessel:
                "http://i.imgur.com/EAWFfAZ.jpg",                  
                "http://i.imgur.com/uBywNQO.jpg", 
                "http://i.imgur.com/voBmkuO.gif",                   
+               "http://i.imgur.com/r1gl4Nl.jpg",                  
+               "http://i.imgur.com/BKrcNTs.jpg",                  
+               "http://i.imgur.com/GskTVj0.gif",
+               "http://i.imgur.com/pKQCbDO.gif",                  
                "http://i.imgur.com/yXgXd4W.gif"]
 
         kessel = choice(kessel)
