@@ -3,5 +3,5 @@
     "INSTALL_MSG" : "This cog has no library requirements.\nPM me at Redjumpman#2375 on Discord if you have issues.",
     "NAME" : "Russianroulette-hn",
     "SHORT" : "Play a game of russian roulette with up to 6 players",
-    "DESCRIPTION" : "Russian roulette simulator. Only one will survive. Change the initial bet requirement with <p>russianset.  This modification of the cog repairs the highnoon functionality that was non-functional in Redjumpan's prior builds.  The original build can be found at https://github.com/Redjumpman/Jumper-Cogs"
+    "DESCRIPTION" : "Russian roulette simulator. Only one will survive. Change the initial bet requirement with <p>russianset.  This modification of the cog repairs the highnoon functionality that was non-functional in Redjumpan's prior builds. It is intended for personal use and will error if you do not have a Risk Takers Role. The original build can be found at https://github.com/Redjumpman/Jumper-Cogs"
 }
