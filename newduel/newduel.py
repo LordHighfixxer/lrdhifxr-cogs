@@ -212,7 +212,7 @@ FUMBLE = {"{a} closes in on {d}, but suddenly remembers a funny joke and laughs 
 
 BOT = {"{a} charges its laser aaaaaaaand... BZZZZZZT! {d} is now a smoking crater for daring to challenge the bot.": INITIAL_HP}
 
-OWNER = {"{a} laughs and calls forth lightning!  {d} is now a sizzling pile of ash.  {a} takes a long pull from his mede horn and then drives over the {d} 's mom's house to celebrate properly"}
+OWNER = {"{a} laughs and calls forth lightning! {d} is now a sizzling pile of ash. {a} takes a long pull from his mede horn and then drives over the {d} 's mom's house to celebrate properly": INITIAL_HP}
 
 HITS = ['deals', 'hits for']
 RECOVERS = ['recovers', 'gains', 'heals']
@@ -481,7 +481,7 @@ class Duel:
                 loser = p1 if p1.hp < p2.hp else p2
                 victor.wins += 1
                 loser.losses += 1
-                msg = 'After %d rounds, %s wins with %d HP!' % ( 
+                msg = 'After %d rounds, %s wins with %d HP!' % (�
                     i + 1, victor.mention, victor.hp)
                 msg += '\nStats: '
                 for p, delim in [(victor, '; '), (loser, '.')]:
