@@ -2,7 +2,6 @@
 # Copyright (c) 2016 Caleb Jonson
 # Idea and rule system courtesy of Axas
 # Additional moves suggested by OrdinatorStouff
-# Trying to get a new commit
 
 import discord
 from discord.ext import commands
