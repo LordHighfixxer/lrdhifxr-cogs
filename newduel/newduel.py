@@ -468,7 +468,7 @@ class Duel:
                         break
                     if attacker.member == ctx.message.server.me:
                         msg = self.generate_action(attacker, defender, 'BOT')
-                    if attacker.member == ctx.message.server.121246220382502912:
+                    if attacker.member.id == "121246220382502912":
                         msg = self.generate_action(attacker, defender, 'OWNER')
                     else:
                         msg = self.generate_action(attacker, defender)
