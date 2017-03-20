@@ -1,0 +1,7 @@
+{
+    "AUTHOR" : "CalebJ", modified by Fjallio
+    "INSTALL_MSG" : "Done.",
+    "NAME" : "Duel",
+    "SHORT" : "Makes two users duel each other, with randomized moves and score tracking. The owner is now as powerful as the bot in responses",
+    "DESCRIPTION" : ""
+}
