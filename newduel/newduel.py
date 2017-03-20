@@ -209,7 +209,7 @@ FUMBLE = {"{a} closes in on {d}, but suddenly remembers a funny joke and laughs 
           "{a} {v} their {o}, but fumbles and drops it on their {b}!": indicatize(WEAPONS)
           }
 
-OWNER = {"{a} laughs and calls forth lightning! {d} is now a sizzling pile of ash. {a} takes a long pull from his mede horn and then drives over the {d} 's mom's house to celebrate properly": INITIAL_HP}
+OZ = {"{a} laughs and calls forth lightning! {d} is now a sizzling pile of ash. {a} takes a long pull from his mede horn and then drives over the {d} 's mom's house to celebrate properly.": INITIAL_HP}
 
 BOT = {"{a} charges its laser aaaaaaaand... BZZZZZZT! {d} is now a smoking crater for daring to challenge the bot.": INITIAL_HP}
 
@@ -469,7 +469,7 @@ class Duel:
                     if attacker.member == ctx.message.server.me:
                         msg = self.generate_action(attacker, defender, 'BOT')
                     if attacker.member.id == "121246220382502912":
-                        msg = self.generate_action(attacker, defender, 'OWNER')
+                        msg = self.generate_action(attacker, defender, 'OZ')
                     else:
                         msg = self.generate_action(attacker, defender)
                     await self.bot.say(msg)
