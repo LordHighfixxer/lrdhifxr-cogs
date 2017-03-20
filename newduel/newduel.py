@@ -2,6 +2,7 @@
 # Copyright (c) 2016 Caleb Jonson
 # Idea and rule system courtesy of Axas
 # Additional moves suggested by OrdinatorStouff
+# Trying to get a new commit
 
 import discord
 from discord.ext import commands
@@ -480,7 +481,7 @@ class Duel:
                 loser = p1 if p1.hp < p2.hp else p2
                 victor.wins += 1
                 loser.losses += 1
-                msg = 'After %d rounds, %s wins with %d HP!' % (
+                msg = 'After %d rounds, %s wins with %d HP!' % ( 
                     i + 1, victor.mention, victor.hp)
                 msg += '\nStats: '
                 for p, delim in [(victor, '; '), (loser, '.')]:
