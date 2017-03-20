@@ -468,9 +468,9 @@ class Duel:
                         break
                     if attacker.member == ctx.message.server.me:
                         msg = self.generate_action(attacker, defender, 'BOT')
-			break
-		    if attacker.member == ctx.message.server.owner:
-		        msg = self.generate_action(attacker, defender, 'OWNER')
+                        break
+                    if attacker.member == ctx.message.server.owner:
+                        msg = self.generate_action(attacker, defender, 'OWNER')
                     else:
                         msg = self.generate_action(attacker, defender)
                     await self.bot.say(msg)
