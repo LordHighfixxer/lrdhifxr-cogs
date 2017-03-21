@@ -23,4 +23,4 @@ class Cybil:
             
 def setup(bot):
     bot.add_listener(n.listener, "on_message")
-    bot.add_cog(cybil)
+    bot.add_cog(cybil(bot))
