@@ -22,5 +22,4 @@ class Cybil:
             await self.bot.say(embed=data)
             
 def setup(bot):
-    bot.add_listener(n.listener, "on_message")
     bot.add_cog(cybil(bot))
