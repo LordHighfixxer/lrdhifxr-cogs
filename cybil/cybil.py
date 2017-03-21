@@ -16,10 +16,12 @@ class Cybil:
     async def listener(self, message):
        auth = member.id == "121246220382502912"
        if 'cybil' in message.content.lower():
-            fuck = randchoice(self.cybilshit).format(auth.mention)
+            cybil = randchoice(self.cybilshit).format(auth.mention)
             data = discord.Embed(colour=user.colour)
-            data.add_field(name="Fuck You!",value="{}".format(fuck))
+            data.add_field(name="cybil You!",value="{}".format(cybil))
             await self.bot.say(embed=data)
             
 def setup(bot):
-    bot.add_cog(cybil(bot))
+    n = Cybil(bot)
+    bot.add_listener(n.listener, "on_message")
+    bot.add_cog(n)
