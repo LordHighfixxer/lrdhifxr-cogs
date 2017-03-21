@@ -7,7 +7,7 @@ class Cybilshit:
 
     def __init__(self, bot):
         self.bot = bot
-self.cybilshit = ["I could kick your ass at this game Adam","Wow, you suck Adam.","Can you not see I am getting ready for work Adam?","What does don't stick your dick in crazy mean Adam?"]
+        self.cybilshit = ["I could kick your ass at this game Adam","Wow, you suck Adam.","Can you not see I am getting ready for work Adam?","What does don't stick your dick in crazy mean Adam?"]
 
 class Cybil:
     def __init__(self, bot):
