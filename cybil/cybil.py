@@ -1,3 +1,7 @@
+import discord
+from discord.ext import commands
+from random import choice as randchoice
+
 class Cybilshit:
     def __init__(self, bot):
         self.bot = bot
@@ -9,7 +13,7 @@ class Cybilshit:
                 cybilfuck = randchoice(self.cybilshit)
                 data = discord.Embed(colour=user.color)
                 data.add_field(name="Message from Cybil:",value="{}".format(cybilfuck))                     
-                await self.bot.send_message(message.channel, 'Did someone mention a blowjob because, I mean lets talk prices.')
+                await self.bot.say(embed==data)
 
 
 def setup(bot):
