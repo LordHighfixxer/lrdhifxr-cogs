@@ -3,7 +3,7 @@ from discord.ext import commands
 from random import choice
 
 
-class cybil:
+class cybilprotocol:
     "cybil cybil"
 
     def __init__(self, bot):
@@ -43,4 +43,4 @@ class cybil:
 
 
 def setup(bot):
-     bot.add_cog(cybil(bot))
+     bot.add_cog(cybilprotocol(bot))
