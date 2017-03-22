@@ -43,4 +43,4 @@ class cybil:
 
 
 def setup(bot):
-bot.add_cog(cybil(bot))
+     bot.add_cog(cybil(bot))
