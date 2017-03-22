@@ -1,4 +1,3 @@
-# noinspection PyUnresolvedReferences
 import discord
 import re
 
