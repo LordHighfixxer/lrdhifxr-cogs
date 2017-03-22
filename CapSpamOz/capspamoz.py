@@ -29,7 +29,7 @@ class CapSpamOz:
                 self.count += 1
                 if self.count > 2:
                     trigger = str(m.author.name) + ' wrote *"' + trigger[2:-2] + '..."*'
-                    await self.bot.send_message(m.channel, trigger + "\nPlease refrain from using caps")
+                    await self.bot.send_message(m.channel, trigger + "\nLook jackass tone it the fuck down and take your ALL CAPS glory to the salt channel")
                     try:
                         await self.bot.delete_message(m)
                     except discord.errors.Forbidden:
