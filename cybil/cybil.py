@@ -1,22 +1,46 @@
 import discord
 from discord.ext import commands
-from random import choice as randchoice
+from random import choice
 
-class Cybilshit:
+
+class cybil:
+    "cybil cybil"
+
     def __init__(self, bot):
         self.bot = bot
-        self.cybilshit = ["You mean nothing to me without wings in your hands {}! ~{}","Fuck you, {}. ~{}", "Fucking fuck off, {}. ~{}","Fuck off, {}. ~{}","Fuck this, {}. ~{}", "Fuck that, {}. ~{}","Eat a dick, {}. ~{}"]
 
-    async def listener(self, message):
-        if message.author.id != self.bot.user.id:
-            if 'cybil' in message.content.lower():
-                cybilfuck = randchoice(self.cybilshit)
-                data = discord.Embed(colour=user.color)
-                data.add_field(name="Message from Cybil:",value="{}".format(cybilfuck))                     
-                await self.bot.say(embed==data)
+    @commands.command(no_pm=True, aliases=["cybil"])
+    async def cybil(self):
+        """Displays a random cybil."""
+
+        # TODO make bigger list
+        cybil = ["God you suck at this game Adam.",
+               "I could kick your ass at this game Adam.",
+               "I do not enjoy people making fun of you.  I enjoy them knowing how terrible you are at life Adam.",
+               "Fort says you suck, and you do Adam",
+               "Wow, you still suck Adam.",
+               "We do not need to buy a vacuum.  You already suck enough Adam.",
+               "CAN YOU NOT SEE I AM TRYING TO GET READY FOR WORK ADAM?!?!?!?!"]
+
+        cybil = choice(cybil)
+
+        cybilsay = ["Cybil Intensification Protocol Engaged", "Adam sucks and here is why"]
+        cybilsay = choice(cybilsay)
+
+        colour = ''.join([choice('0123456789ABCDEF') for x in range(6)])
+        colour = int(colour, 16)
+
+        data = discord.Embed(
+            description="", colour=discord.Colour(value=colour))
+        data.add_field(name=cybilsay, value=u"\u2063")
+        data.set_image(url=cybil)
+
+        try:
+            await self.bot.say(embed=data)
+        except:
+            await self.bot.say("I need the `Embed links` permission "
+                               "to send this")
 
 
 def setup(bot):
-    n = Cybilshit(bot)
-    bot.add_listener(n.listener, "on_message")
-    bot.add_cog(n)
+bot.add_cog(cybil(bot))
