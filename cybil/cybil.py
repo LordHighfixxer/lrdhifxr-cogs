@@ -10,7 +10,7 @@ class cybil:
         self.bot = bot
 
     @commands.command(no_pm=True, aliases=["cybil"])
-    async def CIP(self):
+    async def needcybil(self):
         """Displays a random cybil."""
 
         # TODO make bigger list
