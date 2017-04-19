@@ -31,7 +31,7 @@ class Newsletter:
             await self.bot.say("Ok, let me set up your account for our newsletter!!")
             self.news[weeb.id] = {'send' : True}
             dataIO.save_json(self.new, self.news)
-            await self.bot.say("Congrats, you will now recieve our newsletter! You can turn it off by saying `{}newsletter toggle`".format(ctx.prefix))
+            await self.bot.say("Congrats, you will now recieve Sparky's GNN updates and the server update newsletter direct to DM! You can turn it off by saying `{}newsletter toggle`".format(ctx.prefix))
         else:
             await self.bot.say("Sorry, you already have registered for a newsletter account?")
  
@@ -58,7 +58,7 @@ class Newsletter:
         """Allows Authorized Users Only to Send out Newsletter!"""
         
         if ctx.message.author.id not in ["164416062337712128", "97375528868118528", "121246220382502912"]:
-            await self.bot.say("You don't have access to this, sorry")
+            await self.bot.say("You don't have permission to send out newsletters.")
             return
                     
         if len(self.news) <= 0:
@@ -80,7 +80,7 @@ class Newsletter:
             else:
                 pass        
         else:
-            await self.bot.say("Newsletter has all been sent out to everyone who wanted it!")
+            await self.bot.say("Newsletter has all been sent out to all Guardians on the mailing list")
 
 def check_folders():
     if not os.path.exists("data/news"):
