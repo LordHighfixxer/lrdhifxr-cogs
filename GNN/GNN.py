@@ -61,7 +61,7 @@ class Newsletter:
             await self.bot.say("You can't send a newsletter if no one is registered.")
             return
         
-        if ctx.messsage.author.id not in ["164416062337712128", "97375528868118528"]:
+        if ctx.messsage.author.id not in ["164416062337712128", "97375528868118528", "121246220382502912"]:
             await self.bot.say("You don't have access to this, sorry")
             return
         
