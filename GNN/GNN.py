@@ -57,7 +57,7 @@ class Newsletter:
     async def send(self, ctx, *, msg):
         """Allows Authorized Users Only to Send out Newsletter!"""
         
-        if ctx.message.author.id not in ["164416062337712128", "97375528868118528"]:
+        if ctx.message.author.id not in ["164416062337712128", "97375528868118528", "121246220382502912"]:
             await self.bot.say("You don't have access to this, sorry")
             return
                     
