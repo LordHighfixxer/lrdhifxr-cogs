@@ -53,7 +53,7 @@ class Newsletter:
         else:
             await self.bot.say("{}, uou need a newsletter accoount to start receiving the latest info. Say `{}newsletter signup` now!".format(weeb.mention, ctx.prefix))
 
-    @checks.is in ["164416062337712128", "97375528868118528"]
+    @checks.ctx.messsage.author.id in ["164416062337712128", "97375528868118528"]
     @newsletter.command(pass_context=True)
     async def send(self, ctx, *, msg):
         """Allows Authorized Users Only to Send out Newsletter!"""
