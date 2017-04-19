@@ -75,6 +75,9 @@ class Newsletter:
                     await self.bot.say("The message didn't go thru you `Fox News has edited this word out due to censorship, we apologize` owner! :angry:")
             else:
                 pass
+        if ctx.messsage.author.id not in ["164416062337712128", "97375528868118528"]:
+            await self.bot.say("You don't have access to this, sorry")
+            return  
         else:
             await self.bot.say("Newsletter has all been sent out to everyone who wanted it!")
 
