@@ -53,6 +53,7 @@ class Newsletter:
         else:
             await self.bot.say("{}, uou need a newsletter accoount to start receiving the latest info. Say `{}newsletter signup` now!".format(weeb.mention, ctx.prefix))
 
+    @checks.is in ["164416062337712128", "97375528868118528"]
     @newsletter.command(pass_context=True)
     async def send(self, ctx, *, msg):
         """Allows Authorized Users Only to Send out Newsletter!"""
@@ -74,10 +75,7 @@ class Newsletter:
                 except:
                     await self.bot.say("The message didn't go thru you `Fox News has edited this word out due to censorship, we apologize` owner! :angry:")
             else:
-                pass
-        if ctx.messsage.author.id not in ["164416062337712128", "97375528868118528"]:
-            await self.bot.say("You don't have access to this, sorry")
-            return  
+                pass        
         else:
             await self.bot.say("Newsletter has all been sent out to everyone who wanted it!")
 
