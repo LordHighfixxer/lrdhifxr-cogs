@@ -55,11 +55,8 @@ class Newsletter:
 
     @newsletter.command(pass_context=True)
     async def send(self, ctx, *, msg):
-        list = ["97375528868118528", "149652374791651339"]
-        if ctx.messsage.author.id not in list:
-             return await self.bot.say("You are not a certified paperboy, sorry")
         """Allows Authorized Users Only to Send out Newsletter!"""
-
+        
         if len(self.news) <= 0:
             await self.bot.say("You can't send a newsletter if no one is registered.")
             return
