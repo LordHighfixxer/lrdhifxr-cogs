@@ -62,7 +62,8 @@ class Newsletter:
             return
         
         if ctx.messsage.author.id not in ["164416062337712128", "97375528868118528"]:
-            return await self.bot.say("You don't have access to this, sorry")
+            await self.bot.say("You don't have access to this, sorry")
+            return
         
         for id in self.news:
             if self.news[id]['send']: 
