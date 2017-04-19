@@ -28,12 +28,12 @@ class Newsletter:
         
         weeb = ctx.message.author
         if weeb.id not in self.news:
-            await self.bot.say("Ok, let me set up your acconut for our newsletter!!")
+            await self.bot.say("Ok, let me set up your account for our newsletter!!")
             self.news[weeb.id] = {'send' : True}
             dataIO.save_json(self.new, self.news)
             await self.bot.say("Congrats, you will now recieve our newsletter! You can turn it off by saying `{}newsletter toggle`".format(ctx.prefix))
         else:
-            await self.bot.say("Sorry, you already have registered for a newsletter acconut?")
+            await self.bot.say("Sorry, you already have registered for a newsletter account?")
  
     @newsletter.command(pass_context=True)
     async def toggle(self, ctx):
@@ -51,11 +51,14 @@ class Newsletter:
                 dataIO.save_json(self.new, self.news)
                 await self.bot.say("Congrats, you will now stop recieving newsletter thru pm!")
         else:
-            await self.bot.say("{}, uou need a newsletter acconut to start receiving the latest info. Say `{}newsletter signup` now!".format(weeb.mention, ctx.prefix))
+            await self.bot.say("{}, uou need a newsletter accoount to start receiving the latest info. Say `{}newsletter signup` now!".format(weeb.mention, ctx.prefix))
 
     @newsletter.command(pass_context=True)
     async def send(self, ctx, *, msg):
-        """Owner only, sends announcement for people who !!!!"""
+        list = ["97375528868118528", "149652374791651339"]
+        if ctx.messsage.author.id not in list:
+        return await self.bot.say("You don't have access to this, sorry")
+        """Allows Authorized Users Only to Send out Newsletter!"""
 
         if len(self.news) <= 0:
             await self.bot.say("You can't send a newsletter if no one is registered.")
