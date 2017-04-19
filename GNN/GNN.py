@@ -53,7 +53,6 @@ class Newsletter:
         else:
             await self.bot.say("{}, uou need a newsletter acconut to start receiving the latest info. Say `{}newsletter signup` now!".format(weeb.mention, ctx.prefix))
 
-    @checks.is_owner()
     @newsletter.command(pass_context=True)
     async def send(self, ctx, *, msg):
         """Owner only, sends announcement for people who !!!!"""
