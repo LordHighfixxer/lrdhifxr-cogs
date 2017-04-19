@@ -59,7 +59,8 @@ class Newsletter:
         
         list = ["97375528868118528", "149652374791651339"]
         if ctx.messsage.author.id not in list:
-             return await self.bot.say("You don't have access to this, sorry")
+            await self.bot.say("You don't have access to this, sorry")
+            return
         
         if len(self.news) <= 0:
             await self.bot.say("You can't send a newsletter if no one is registered.")
