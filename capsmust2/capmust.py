@@ -9,26 +9,26 @@ import re
 __author__ = "ScarletRav3n"
 
 
-class CapSpam:
-    """Prevent spamming in caps"""
+class CapMust:
+    """Demands All Caps"""
 
     def __init__(self, bot):
         self.bot = bot
         self.count = 0
-        self.ignore = dataIO.load_json("data/capspam/ignorelist.json")
+        self.ignore = dataIO.load_json("data/capmust/ignorelist.json")
 
     def save_ignore(self):
         dataIO.save_json(self.ignore)
-        dataIO.is_valid_json("data/capspam/ignorelist.json")
+        dataIO.is_valid_json("data/capsmust/ignorelist.json")
 
     @commands.group(pass_context=True)
     @checks.admin_or_permissions(administrator=True)
-    async def capspam(self, ctx):
-        """CapSpam settings"""
+    async def capsmust(self, ctx):
+        """CapsMust settings"""
         if ctx.invoked_subcommand is None:
             await self.bot.send_cmd_help(ctx)
 
-    @capspam.group(pass_context=True, no_pm=True)
+    @capsmust.group(pass_context=True, no_pm=True)
     async def ignore(self, ctx):
         """Adds servers/channels to ignorelist"""
         if ctx.invoked_subcommand is None:
@@ -44,14 +44,14 @@ class CapSpam:
         if not channel:
             if current_ch.id not in self.ignore["CHANNELS"]:
                 self.ignore["CHANNELS"].append(current_ch.id)
-                dataIO.save_json("data/capspam/ignorelist.json", self.ignore)
+                dataIO.save_json("data/capsmust/ignorelist.json", self.ignore)
                 await self.bot.say("Channel added to ignore list.")
             else:
                 await self.bot.say("Channel already in ignore list.")
         else:
             if channel.id not in self.ignore["CHANNELS"]:
                 self.ignore["CHANNELS"].append(channel.id)
-                dataIO.save_json("data/capspam/ignorelist.json", self.ignore)
+                dataIO.save_json("data/capsmust/ignorelist.json", self.ignore)
                 await self.bot.say("Channel added to ignore list.")
             else:
                 await self.bot.say("Channel already in ignore list.")
@@ -62,12 +62,12 @@ class CapSpam:
         server = ctx.message.server
         if server.id not in self.ignore["SERVERS"]:
             self.ignore["SERVERS"].append(server.id)
-            dataIO.save_json("data/capspam/ignorelist.json", self.ignore)
+            dataIO.save_json("data/capsmust/ignorelist.json", self.ignore)
             await self.bot.say("This server has been added to the ignore list.")
         else:
             await self.bot.say("This server is already being ignored.")
 
-    @capspam.group(pass_context=True, no_pm=True)
+    @capsmust.group(pass_context=True, no_pm=True)
     async def unignore(self, ctx):
         """Removes servers/channels from ignorelist"""
         if ctx.invoked_subcommand is None:
@@ -83,7 +83,7 @@ class CapSpam:
         if not channel:
             if current_ch.id in self.ignore["CHANNELS"]:
                 self.ignore["CHANNELS"].remove(current_ch.id)
-                dataIO.save_json("data/capspam/ignorelist.json", self.ignore)
+                dataIO.save_json("data/capsmust/ignorelist.json", self.ignore)
                 await self.bot.say("This channel has been removed from the ignore list.")
             else:
                 await self.bot.say("This channel is not in the ignore list.")
@@ -101,7 +101,7 @@ class CapSpam:
         server = ctx.message.server
         if server.id in self.ignore["SERVERS"]:
             self.ignore["SERVERS"].remove(server.id)
-            dataIO.save_json("data/capspam/ignorelist.json", self.ignore)
+            dataIO.save_json("data/capsmust/ignorelist.json", self.ignore)
             await self.bot.say("This server has been removed from the ignore list.")
         else:
             await self.bot.say("This server is not in the ignore list.")
@@ -130,7 +130,7 @@ class CapSpam:
                 self.count += 1
                 if self.count > 2:
                     trigger = str(m.author.name) + ' wrote *"' + trigger[2:-2] + '..."*'
-                    await self.bot.send_message(m.channel, trigger + "\nPlease refrain from using caps")
+                    await self.bot.send_message(m.channel, trigger + "\nHOW HARD IS IT TO FOLLOW THE FUCKING RULES ASSHOLE?")
                     try:
                         await self.bot.delete_message(m)
                     except discord.errors.Forbidden:
@@ -140,17 +140,17 @@ class CapSpam:
 
 
 def check_folders():
-    if not os.path.exists("data/capspam"):
-        print("Creating data/capspam folder...")
-        os.makedirs("data/capspam")
+    if not os.path.exists("data/capsmust"):
+        print("Creating data/capsmust folder...")
+        os.makedirs("data/capsmust")
 
 
 def check_files():
-    f = "data/capspam/ignorelist.json"
+    f = "data/capsmust/ignorelist.json"
     if not dataIO.is_valid_json(f):
         print("No such thing as ignorelist.json...")
 
 
 def setup(bot):
-    n = CapSpam(bot)
+    n = CapMust(bot)
     bot.add_cog(n)
