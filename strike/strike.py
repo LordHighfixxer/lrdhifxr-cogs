@@ -113,7 +113,7 @@ class strike:
             for i, hunter in enumerate(scores, 1):
                 if i > 20:
                     break
-                message += '{:<4}{:<8}{} ({})\n'.format(i, p[hunter]['total'], p[hunter]['author_name'], ', '.join([str(p[hunter]['score'][x]) + ' ' + x.capitalize() + 's' for x in p[hunter]['score']]))
+                message += '{:<4}{:<8}{} ({})\n'.format(i, p[hunter]['total'], p[hunter]['author_name'], ', '.join([str(p[hunter]['score'][x]) + ' ' + x.capitalize() for x in p[hunter]['score']]))
             message += '```'
         else:
             message = '**Guardian, please shoot something on a Strike before you try to brag about it.  Try not to be like Cayde-6**'
@@ -149,7 +149,7 @@ class strike:
                 await self.add_score(server, author, animal)
                 msg = '**{} shot a {}!**'.format(author.mention, animal)
             else:
-                msg = '**{} missed the shot and the {} retreated to cal for reinforcements!**'.format(author.mention, animal)
+                msg = '**{} missed the shot and the {} retreated to call for reinforcements!**'.format(author.mention, animal)
         else:
             msg = '**The {} got away!** :confused:'.format(animal)
         self.in_game.remove(channel.id)
