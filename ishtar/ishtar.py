@@ -34,7 +34,7 @@ class IshtarAcademy:
         # Start of Image
         if search_type[0] == "image" or search_type[0] == "images":
             if search_valid == "image" or search_valid == "images":
-                await self.bot.say("Please actually search something")
+                await self.bot.say("I am not a mind reader Guardian. Please specify a search subject.")
             else:
                 if search_type[0] == "image":
                     url, error = await self.images(ctx, regex, option)
@@ -43,12 +43,12 @@ class IshtarAcademy:
                 if url and not error:
                     await self.bot.say(url)
                 elif error:
-                    await self.bot.say("Your search yielded no results.")
+                    await self.bot.say("Guardian, your search yielded no results.")
             # End of Image
         # Start of Maps
         elif search_type[0] == "maps":
             if search_valid == "maps":
-                await self.bot.say("Please actually search something")
+                await self.bot.say("I am a busy ghost Guardian, please actually specify a subject")
             else:
                 uri = "https://www.google.com/maps/search/"
                 quary = str(ctx.message.content
@@ -75,7 +75,7 @@ class IshtarAcademy:
                         query_find = self.parsed(query_find, regex)
                         await self.bot.say("{}".format("\n".join(query_find)))
                     except IndexError:
-                        await self.bot.say("Your search yielded no results.")
+                        await self.bot.say("Your search yielded no results Guardian.")
                 elif regex[3].search(query_find[0]):
                         query_find = self.parsed(query_find, regex)
                         await self.bot.say("{}".format("\n".join(query_find)))
@@ -126,7 +126,7 @@ class IshtarAcademy:
                 r = self.unescape(r)
         for i in range(len(find)):
             if i == 0:
-                find[i] = find[i] + "\n\n**You might also want to check these out:**"
+                find[i] = find[i] + "\n\n**Guardian, You might also want to check these resources:**"
             else:
                 find[i] = "<{}>".format(find[i])
         return find
