@@ -212,7 +212,7 @@ def check_files():
 def setup(bot):
     check_folder()
     check_files()
-    cog = Strike(bot)
+    cog = strike(bot)
     loop = asyncio.get_event_loop()
     loop.create_task(cog._strike_loop())
     bot.add_cog(cog)
