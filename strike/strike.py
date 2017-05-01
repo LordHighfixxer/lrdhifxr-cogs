@@ -95,7 +95,7 @@ class strike:
         server = context.message.server
         if server.id in self.scores:
             if member.id in self.scores[server.id]:
-                message = '**{} shot a total of {} minions of the darkness ({})**'.format(member.mention, self.scores[server.id][member.id]['total'], ', '.join([str(p[hunter]['score'][x]) + ' ' + x.capitalize() for x in p[hunter]['score']])
+                message = '**{} shot a total of {} minions of the darkness ({})**'.format(member.mention, self.scores[server.id][member.id]['total'], ', '.join([str(self.scores[server.id][member.id][x]) + ' ' + x.capitalize() self.scores[server.id][member.id]]))
             else:
                 message = '**Guardian, please shoot something on a Strike before you try to brag about it.  Try not to be like Cayde-6**'
         else:
