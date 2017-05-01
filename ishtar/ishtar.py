@@ -10,7 +10,7 @@ class IshtarAcademy:
     def __init__(self, bot):
         self.bot = bot
 
-    @commands.command(name="advgoogle", pass_context=True)
+    @commands.command(name="ishtar", pass_context=True)
     @commands.cooldown(5, 60, commands.BucketType.user)
     async def _ishtar(self, ctx, text):
         """Search the databanks of the Ishtar Academy.
