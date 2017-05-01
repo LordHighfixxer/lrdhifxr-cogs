@@ -168,7 +168,7 @@ class strike:
         return False
 
     async def _strike_loop(self):
-        while self == self.bot.get_cog('Strike'):
+        while self == self.bot.get_cog('strike'):
             wait_time = random.randrange(self.settings['strike_interval_minimum'], self.settings['strike_interval_maximum'])
             self.next = datetime.datetime.fromtimestamp(int(time.mktime(datetime.datetime.utcnow().timetuple())) + wait_time)
             await asyncio.sleep(wait_time)
