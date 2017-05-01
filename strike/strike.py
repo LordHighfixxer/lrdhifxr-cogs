@@ -47,7 +47,7 @@ class strike:
             message = '**Guardian we\'re already on a strike!**'
         else:
             self.subscriptions[server.id] = channel.id
-            message = '**The go order from the Vanguard has beeen received. Eyes Up Guardians.**'
+            message = '**The go order from the Vanguard has been received. Eyes Up Guardians.**'
             await self._save_subscriptions()
         await self.bot.say(message)
 
