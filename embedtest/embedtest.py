@@ -36,8 +36,9 @@ class EmbedTestOz:
     async def _pabroadcastembedtst(self):
         """Random Broadcasts from the Tower"""
         em = discord.Embed(
-            title='Broadcast from the Tower', colour=0xDEADBF)
-        em.add_field(randchoice(self.embedtstoz))
+            title='Broadcast from the Tower', colour=0xDEADBF)       
+        em.add_field(pachoice=randchoice(self.embedtstoz))
+        await self.bot.say(embed=em)
 
 
 def setup(bot):
