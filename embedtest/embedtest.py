@@ -39,5 +39,6 @@ class EmbedTestOz:
             title='Broadcast from the Tower', colour=0xDEADBF)
         em.add_field(randchoice(self.embedtestoz)
 
+
 def setup(bot):
     bot.add_cog(EmbedTestOz(bot))
