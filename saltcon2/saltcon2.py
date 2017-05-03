@@ -81,10 +81,10 @@ class SALTCON2:
             author = "This outpost is at SALTCON LEVEL {}.".format(level)
             subtitle = ("No known darkness induced NaCl related threats "
                         "exist at this time.")
-            instructions = ("- Partipaction in online games is encouraged\n"
-                            "- Remain vigilant of insider threats\n"
+            instructions = ("- Partipaction in Crucible matches is encouraged\n"
+                            "- Remain vigilant of Guardian trolls\n"
 			    "- Think about saying nice things about Cybil\n"
-                            "- Report all suspicious activity")
+                            "- Report all suspicious Admin activity")
         elif level == '4':
             color = 0x00ff00
             thumbnail_url = 'http://i.imgur.com/siIWL5V.gif'
@@ -100,7 +100,7 @@ class SALTCON2:
             thumbnail_url = 'http://i.imgur.com/E71VSBE.gif'
             author = "This outpost is at SALTCON LEVEL {}.".format(level)
             subtitle = 'Sodium levels may exceed Tower exposure limits.'
-            instructions = ("- Use extreme caution when playing ranked games\n"
+            instructions = ("- Use extreme caution when playing Crucible matches\n"
                             "- Log off non-essential communication channels\n"
 			    "- Stay out of Trials of Osiris\n"
                             "- Put on your big boy pants")
@@ -109,16 +109,16 @@ class SALTCON2:
             thumbnail_url = 'http://i.imgur.com/PxKhT7h.gif'
             author = "This outpost is at SALTCON LEVEL {}.".format(level)
             subtitle = 'Sodium levels are approaching critical mass'
-            instructions = ("- Avoid Crucible and Nightfall at all costs\n"
+            instructions = ("- Avoid Nightfall at all costs\n"
                             "- Mute all hostile voice channels\n"
 			    "- Call Peejs <omitted family member> and tell her you love her\n"
-			    "- Stock up on wings\n"
+			    "- Irritate the grass before it is too late\n"
                             "- Queue up some relaxing Radiohead music")
         elif level == '1':
             color = 0xffffff
             thumbnail_url = 'http://i.imgur.com/wzXSNWi.gif'
             author = "This outpost is at SALTCON LEVEL {}.".format(level)
-            subtitle = 'The Darkness is upon us; destruction MMINENT.'
+            subtitle = 'The Darkness is upon us; destruction IMMINENT.'
             instructions = ("- Do not participate in any Crucible game modes\n"
                             "- Avoid speaking to the HigeherUps\n"
                             "- Evacuate the outpost until the "
