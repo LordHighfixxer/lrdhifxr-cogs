@@ -3,18 +3,18 @@ from discord.ext import commands
 from random import choice
 
 
-class destinytower:
-    "Delivers a Random Destiny Tower PA Quote"
+class phlem:
+    "phlem phlem"
 
     def __init__(self, bot):
         self.bot = bot
 
-    @commands.command(no_pm=True, aliases=["destinytower"])
-    async def destinytower(self):
-        """Displays a random Quote from Destinys Tower PA."""
+    @commands.command(no_pm=True, aliases=["phlem"])
+    async def phlem(self):
+        """Displays a random phlem."""
 
         # TODO make bigger list
-        destinytower = ["http://i.imgur.com/HpXZPZ1.gif",
+        phlem = ["http://i.imgur.com/HpXZPZ1.gif",
                "http://i.imgur.com/KsCh67n.gif",
                "http://i.imgur.com/HIZfEpX.gif",
                "http://i.imgur.com/uzubEP8.gif",
@@ -30,19 +30,20 @@ class destinytower:
                "http://i.imgur.com/GskTVj0.gif",
                "http://i.imgur.com/pKQCbDO.gif",                  
                "http://i.imgur.com/yXgXd4W.gif"]
-        destinytower = choice(destinytower)
 
-        destinytowersay = ["destinytower!!11", "destinytower Intensification Protocol Engaged", "Keeeeeeesssssssel",
-                  "destinytower destinytower :P", "*intense destinytowering*", "I ran out of destinytower so here is some more"]
-        destinytowersay = choice(destinytowersay)
+        phlem = choice(phlem)
+
+        phlemsay = ["phlem!!11", "phlem Intensification Protocol Engaged", "Keeeeeeesssssssel",
+                  "phlem phlem :P", "*intense phleming*", "I ran out of phlem so here is some more"]
+        phlemsay = choice(phlemsay)
 
         colour = ''.join([choice('0123456789ABCDEF') for x in range(6)])
         colour = int(colour, 16)
 
         data = discord.Embed(
             description="", colour=discord.Colour(value=colour))
-        data.add_field(name=destinytowersay, value=u"\u2063")
-        data.set_image(url=destinytower)
+        data.add_field(name=phlemsay, value=u"\u2063")
+        data.set_image(url=phlem)
 
         try:
             await self.bot.say(embed=data)
@@ -52,4 +53,4 @@ class destinytower:
 
 
 def setup(bot):
-     bot.add_cog(destinytower(bot))
+     bot.add_cog(phlem(bot))
