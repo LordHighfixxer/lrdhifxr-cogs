@@ -38,7 +38,7 @@ class EmbedTestOz:
         pachoice = randchoice(self.embedtstoz)
         em = discord.Embed(
             title='Broadcast from the Tower', colour=0xDEADBF)       
-        em.add_field(name=pachoice value=u"\u2063)
+        em.add_field(name=pachoice, value=u"\u2063)
         await self.bot.say(embed=em)
 
 
