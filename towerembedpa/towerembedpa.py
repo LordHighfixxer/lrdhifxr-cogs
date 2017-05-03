@@ -43,4 +43,4 @@ class TowerEmbedPA:
 
 
 def setup(bot):
-bot.add_cog(TowerEmbedPA(bot))
+    bot.add_cog(TowerEmbedPA(bot))
