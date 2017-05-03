@@ -32,7 +32,7 @@ class TowerEmbedPA:
             "Fire team The Vanguard Don't Care What We Call Ourselves Either, report in - Zavalla",
             "Attention we have reports of a fireteam leader involuntarily extracting Guardians to orbit. Please report these incidents to the Vanguard immediately."]
 
-    @commands.command(name="pabroadcastembedtst", aliases=[""])
+    @commands.command(name="towercontact", aliases=[""])
     async def _towercontact(self):
         """Random Broadcasts from the Tower"""
         pachoice = randchoice(self.towerembedpa)
