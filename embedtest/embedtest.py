@@ -25,18 +25,18 @@ class EmbedTestOz:
                "Will Fireteam.... (sigh) Will Fireteam 'The Bad Guys don't care what we call ourselves' please report to the Vanguard immediately.",
                "Shuttle Advisory: The Crucible is open to those who run it.",
                "Shuttle to Core East in 6 minutes!",
-	       "Shuttle to Lower North drops off, 6 minutes!",
-	       "This is Master Rahool. Apprentice DeSalnus, please return to the archives at once, your engrams are melting a table!",
-	       "Fireteam Swift Resolution, you have been reassigned. Report to the wall. Zavala out.",
-	       "Fire team The Vanguard Don't Care What We Call Ourselves Either, report in - Zavalla",
+	           "Shuttle to Lower North drops off, 6 minutes!",
+	           "This is Master Rahool. Apprentice DeSalnus, please return to the archives at once, your engrams are melting a table!",
+	           "Fireteam Swift Resolution, you have been reassigned. Report to the wall. Zavala out.",
+	           "Fire team The Vanguard Don't Care What We Call Ourselves Either, report in - Zavalla",
                "Attention we have reports of a fireteam leader involuntarily extracting Guardians to orbit. Please report these incidents to the Vanguard immediately."]
 
     @commands.command(name="vanguardpa", aliases=[""])
     async def _pabroadcastembedtst(self):
         """Random Broadcasts from the Tower"""
-	em = discord.Embed(title='Broadcast from the Tower', description='Tower PA Broadcast', colour=0xDEADBF)
-	em.set_author(name='Someone', randchoice(self.embedtestoz))
-	return await client.send_message(message.channel, embed=em)
+	    em = discord.Embed(title='Broadcast from the Tower', description='Tower PA Broadcast', colour=0xDEADBF)
+	    em.set_author(name='Someone', randchoice(self.embedtestoz))
+	    return await client.send_message(message.channel, embed=em)
 	
         """return await self.bot.say(randchoice(self.embedtestoz))"""
 
