@@ -38,7 +38,7 @@ class TowerEmbedPA:
         pachoice = randchoice(self.towerembedpa)
         em = discord.Embed(
             title='Broadcast from the Tower', colour=0xff6600)       
-        em.add_field(name=pachoice, value=u"\u2063", colour=0xcccccc)
+        em.add_field(name=pachoice, value=u"\u2063")
         await self.bot.say(embed=em)
 
 
