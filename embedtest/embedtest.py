@@ -34,9 +34,9 @@ class EmbedTestOz:
     @commands.command(name="vanguardpa", aliases=[""])
     async def _pabroadcastembedtst(self):
         """Random Broadcasts from the Tower"""
-	em = discord.Embed(title='Broadcast from the Tower', description='Tower PA Broadcast', colour=0xDEADBF)
-        em.set_author(name='Someone', randchoice(self.embedtestoz))
-        return await client.send_message(message.channel, embed=em)
+	 em = discord.Embed(title='Broadcast from the Tower', description='Tower PA Broadcast', colour=0xDEADBF)
+         em.set_author(name='Someone', randchoice(self.embedtestoz))
+         return await client.send_message(message.channel, embed=em)
 	
         """return await self.bot.say(randchoice(self.embedtestoz))"""
 
