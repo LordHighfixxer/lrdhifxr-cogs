@@ -10,7 +10,7 @@ class towerpa:
         self.bot = bot
 
     @commands.command(no_pm=True, aliases=["towerpa"])
-    async def towerpa(self):
+    async def patower(self):
         """Displays a random towerpa."""
 
         # TODO make bigger list
