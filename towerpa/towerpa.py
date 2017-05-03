@@ -4,14 +4,14 @@ from random import choice
 
 
 class towerpa:
-    "towerpa towerpa"
+    "Will select from a list of Tower PA Quotes and display one at random"
 
     def __init__(self, bot):
         self.bot = bot
 
     @commands.command(no_pm=True, aliases=["towerpa"])
-    async def towerpa(self):
-        """Displays a random towerpa."""
+    async def pabroadcast(self):
+        """Displays a random Tower PA Quote from Destiny."""
 
         # TODO make bigger list
         towerpa = ["Attention Guardians, attacks on Titans have increased. Please stay in a fireteam to remain safe.",
