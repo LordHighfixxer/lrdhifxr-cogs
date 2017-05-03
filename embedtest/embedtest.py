@@ -37,7 +37,7 @@ class EmbedTestOz:
         """Random Broadcasts from the Tower"""
         em = discord.Embed(
             title='Broadcast from the Tower', colour=0xDEADBF)
-        em.add_field(randchoice(self.embedtestoz)
+        em.add_field(randchoice(self.embedtestoz))
 
 
 def setup(bot):
