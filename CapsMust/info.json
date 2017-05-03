@@ -1,9 +1,0 @@
-{
-    "AUTHOR" : "LordHighFixxer",
-    "DESCRIPTION" : "Demands Caps lock usage",
-    "DISABLED" : false,
-    "TAGS" : ["utility", "automated", "moderation"],
-    "INSTALL_MSG" : "The bot will delete messages and warm users of not using caps. \n Make sure the bot has the `manage_messages` perm",
-    "NAME" : "CapMust",
-    "SHORT" : "Demand cap spamming"
-}
