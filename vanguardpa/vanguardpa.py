@@ -35,7 +35,7 @@ class VanguardPA:
         """Ask for your fortune
         And look deeply into my scales
         """
-        return await self.bot.say("`" + randchoice(self.vanguard broadcast) + "`")
+        return await self.bot.say("`" + randchoice(self.vanguardbroadcast) + "`")
 
 
 def setup(bot):
