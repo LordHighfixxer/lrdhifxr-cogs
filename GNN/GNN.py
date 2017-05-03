@@ -76,11 +76,11 @@ class Newsletter:
                 try:
                     await self.bot.send_message(users, message)
                 except:
-                    await self.bot.say("The message didn't go thru you `Fox News has edited this word out due to censorship, we apologize` owner! :angry:")
+                    await self.bot.say("Standby: Calculating location of all subscribed Guardians")
             else:
                 pass        
         else:
-            await self.bot.say("Newsletter has all been sent out to all Guardians on the mailing list")
+            await self.bot.say("Newsletter has all been sent out to all Guardians whom have subscribed.")
 
 def check_folders():
     if not os.path.exists("data/news"):
