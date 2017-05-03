@@ -10,7 +10,7 @@ class DestinyTower:
         self.bot = bot
 
     @commands.command(no_pm=True, aliases=["destinytower"])
-    async def destinytower(self):
+    async def towerpa(self):
         """Displays a random Quote from Destinys Tower PA."""
 
         # TODO make bigger list
