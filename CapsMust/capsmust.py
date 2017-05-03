@@ -10,7 +10,7 @@ __author__ = "ScarletRav3n"
 
 
 class capsmust:
-    """Prevent spamming in caps"""
+    """Require Caps"""
 
     def __init__(self, bot):
         self.bot = bot
@@ -128,7 +128,7 @@ class capsmust:
                 self.count += 1
                 if self.count > 2:
                     trigger = str(m.author.name) + ' wrote *"' + trigger[2:-2] + '..."*'
-                    await self.bot.send_message(m.channel, trigger + "\nIS IT THAT FUCKING HARD TO FOLLOW THE GOD DAMN RULES ASSHOLE?")
+                    await self.bot.send_message(m.channel, trigger + "\nGUARDIAN HOW HARD IS IT TO FOLLOW THE DAMN RULES?")
                     try:
                         await self.bot.delete_message(m)
                     except discord.errors.Forbidden:
