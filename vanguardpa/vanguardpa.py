@@ -32,9 +32,7 @@ class VanguardPA:
 
     @commands.command(name="vanguardpa", aliases=[""])
     async def _pabroadcast(self):
-        """Ask for your fortune
-        And look deeply into my scales
-        """
+        """Random Broadcasts from the Tower"""
         return await self.bot.say("`" + randchoice(self.vanguardbroadcast) + "`")
 
 
