@@ -10,7 +10,7 @@ __author__ = "ScarletRav3n"
 
 
 class SaltCop:
-    """Require spamming in caps"""
+    """Require spamming in caps and I MEAN CAPS"""
 
     def __init__(self, bot):
         self.bot = bot
