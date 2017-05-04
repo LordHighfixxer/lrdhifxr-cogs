@@ -19,29 +19,29 @@ class DadJokes:
         self.settings = dataIO.load_json(SETTINGS)
 
         @commands.group(name="dadjokes", pass_context=True)
-	async def _dadjokes(self, ctx):
-	"""Everyone loves a dad joke"""
-	if ctx.invoked_subcommand is None:
-		await send_cmd_help(ctx)
-		return
+		async def _dadjokes(self, ctx):
+		"""Everyone loves a dad joke"""
+		if ctx.invoked_subcommand is None:
+			await send_cmd_help(ctx)
+			return
 
 	# GetDadJoke	
 	@commands.command(pass_context=True, no_pm=False)
-	async def getdadjoke(self, ctx):
-	"""Gets a dad joke."""
-		author = ctx.message.author
-		try:
-			rdm = random.randint(0, self.settings["ama_boobs"])
-			search = ("https://icanhazdadjoke.com/j/{}".format(rdm))
-			async with aiohttp.get(search) as r:
-				result = await r.json()
-				joke = random.choice(result)
-				joke = "https://icanhazdadjoke.com/j/<id>{}".format(joke["preview"])
-		except Exception as e:
-			await self.bot.reply("Stop resisting Adam; Error getting results.")
-			return
-		else:
-			await self.bot.send_message(ctx.message.author, "{}".format(joke))  
+		async def getdadjoke(self, ctx):
+		"""Gets a dad joke."""
+			author = ctx.message.author
+			try:
+				rdm = random.randint(0, self.settings["ama_boobs"])
+				search = ("https://icanhazdadjoke.com/j/{}".format(rdm))
+				async with aiohttp.get(search) as r:
+					result = await r.json()
+					joke = random.choice(result)
+					joke = "https://icanhazdadjoke.com/j/<id>{}".format(joke["preview"])
+			except Exception as e:
+				await self.bot.reply("Stop resisting Adam; Error getting results.")
+				return
+			else:
+				await self.bot.send_message(ctx.message.author, "{}".format(joke))  
 
 def check_folders():
         if not os.path.exists(DIR_DATA):
