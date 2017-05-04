@@ -14,22 +14,21 @@ import sys
 class DadJokes:
     """Dad Jokes from icanhazdadjoke.com
     """
-
     def __init__(self, bot):
         self.bot = bot
         self.settings = dataIO.load_json(SETTINGS)
 
     	@commands.group(name="dadjokes", pass_context=True)
-		async def _dadjokes(self, ctx):
-			"""Everyone loves a dad joke"""
-			if ctx.invoked_subcommand is None:
-				await send_cmd_help(ctx)
-				return
+	        async def _dadjokes(self, ctx):
+		"""Everyone loves a dad joke"""
+		if ctx.invoked_subcommand is None:
+			await send_cmd_help(ctx)
+			return
 
 		# GetDadJoke	
 		@commands.command(pass_context=True, no_pm=False)
 		async def getdadjoke(self, ctx):
-			"""Gets a dad joke."""
+		"""Gets a dad joke."""
 			author = ctx.message.author
 			try:
 				rdm = random.randint(0, self.settings["ama_boobs"])
@@ -45,15 +44,15 @@ class DadJokes:
 				await self.bot.send_message(ctx.message.author, "{}".format(joke))  
 
 def check_folders():
-    if not os.path.exists(DIR_DATA):
+        if not os.path.exists(DIR_DATA):
         print("Creating data/dadjokes folder...")
         os.makedirs(DIR_DATA)
 
 def check_files():
-    if not os.path.isfile(SETTINGS):
+        if not os.path.isfile(SETTINGS):
         print("Creating default dadjoke settings.json...")
         dataIO.save_json(SETTINGS, DEFAULT)
-    else:  # Key consistency check
+        else:  # Key consistency check
         try:
             current = dataIO.load_json(SETTINGS)
         except JSONDecodeError:
