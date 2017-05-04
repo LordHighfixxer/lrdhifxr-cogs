@@ -21,19 +21,17 @@ class SaltCop:
         dataIO.save_json(self.ignore)
         dataIO.is_valid_json("data/saltcop/ignorelist.json")
 
-    @commands.group(pass_context=True)
+    @commands.group(pass_context=True, invoke_without_command=True)
     @checks.admin_or_permissions(administrator=True)
     async def saltcop(self, ctx):
         """saltcop settings"""
-        if ctx.invoked_subcommand is None:
-            await self.bot.send_cmd_help(ctx)
+        await self.bot.send_cmd_help(ctx)
 
     @saltcop.group(pass_context=True, no_pm=True)
     async def ignore(self, ctx):
         """Adds servers/channels to ignorelist"""
-        if ctx.invoked_subcommand is None:
-            await self.bot.send_cmd_help(ctx)
-            await self.bot.say(self.count_ignored())
+        await self.bot.send_cmd_help(ctx)
+        await self.bot.say(self.count_ignored())
 
     @ignore.command(name="channel", pass_context=True)
     async def ignore_channel(self, ctx, channel: discord.Channel=None):
@@ -70,9 +68,8 @@ class SaltCop:
     @saltcop.group(pass_context=True, no_pm=True)
     async def unignore(self, ctx):
         """Removes servers/channels from ignorelist"""
-        if ctx.invoked_subcommand is None:
-            await self.bot.send_cmd_help(ctx)
-            await self.bot.say(self.count_ignored())
+        await self.bot.send_cmd_help(ctx)
+        await self.bot.say(self.count_ignored())
 
     @unignore.command(name="channel", pass_context=True)
     async def unignore_channel(self, ctx, channel: discord.Channel=None):
