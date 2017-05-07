@@ -11,14 +11,10 @@ class Detinymotes:
         """Calls Destiny Emotes"""
         if context.invoked_subcommand is None:
             await send_cmd_help(context)
-
-    @_dmote.command(pass_context=True, aliases=;['zpalm'])
-    async def _zavala_faceplam(self, context):
-        await self.bot.send_file(context.message.channel, '{}zavala_facepalm.png'.format(self.base))
-
-    @_dmote.command(pass_context=True, aliases=['xcoin'])
-    async def _xursday(self, context):
-        await self.bot.send_file(context.message.channel, '{}xursday.png'.format(self.base))
+	
+        @_dmote.command(pass_context=True, aliases=;['zpalm'])
+        async def _zavala_faceplam(self, context):
+            await self.bot.send_file(context.message.channel, '{}zavala_facepalm.png'.format(self.base))
     
 def setup(bot):
     n = Destinymotes(bot)
