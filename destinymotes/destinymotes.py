@@ -170,7 +170,7 @@ class Destinymotes:
 	
     @_dmote.command(pass_context=True, name='sniper', aliases=['sniperlock'])
     async def _sniper(self, context):
-	await self.bot.send_file(context.message.channel, '{}sniperlock.png'.format(self.base)) 
+	await self.bot.send_file(context.message.channel, '{}sniperlock.png'.format(self.base))
 	
 def setup(bot):
     n = Destinymotes(bot)
