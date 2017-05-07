@@ -1,10 +1,9 @@
 from discord.ext import commands
 
-
 class Detinymotes:
     def __init__(self, bot):
         self.bot = bot
-        self.base = 'data/memes/images/'
+        self.base = 'data/destinymotes/images/'
 	
     @commands.group(pass_context=True, no_pm=True, name='dmote')
     async def _dmote(self, context):
