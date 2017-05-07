@@ -6,7 +6,7 @@ class Destinymotes:
         self.bot = bot
         self.base = 'data/destinymotes/images/'
 	
-    @commands.group(pass_context=True, no_pm=True, name='dmote')
+    @commands.group(pass_context=True, no_pm=False, name='dmote')
     async def _dmote(self, context):
         """Calls Destiny Emotes"""
         if context.invoked_subcommand is None:
@@ -167,6 +167,70 @@ class Destinymotes:
     @_dmote.command(pass_context=True, name='sniper', aliases=['sniperlock'])
     async def _sniper(self, context):
         await self.bot.send_file(context.message.channel, '{}sniperlock.png'.format(self.base))
+	
+    @_dmote.command(pass_context=True, name='hammerbro2', aliases=['hammertitan2'])
+    async def _hammerbro2(self, context):
+        await self.bot.send_file(context.message.channel, '{}hammerbro2.png'.format(self.base))
+	
+    @_dmote.command(pass_context=True, name='sparrow', aliases=['tricky'])
+    async def _sparrow(self, context):
+        await self.bot.send_file(context.message.channel, '{}sparrow.png'.format(self.base))
+	
+    @_dmote.command(pass_context=True, name='stalker', aliases=['tether'])
+    async def _stalker(self, context):
+        await self.bot.send_file(context.message.channel, '{}stalker.png'.format(self.base))
+	
+    @_dmote.command(pass_context=True, name='thorn', aliases=['yor'])
+    async def _thorn(self, context):
+        await self.bot.send_file(context.message.channel, '{}thorn.png'.format(self.base))
+	
+    @_dmote.command(pass_context=True, name='treasure', aliases=['chest'])
+    async def _treasure(self, context):
+        await self.bot.send_file(context.message.channel, '{}treasure.png'.format(self.base))
+	
+    @_dmote.command(pass_context=True, name='trialshunter', aliases=['trialsh'])
+    async def _trialshunter(self, context):
+        await self.bot.send_file(context.message.channel, '{}trialshunter.png'.format(self.base))
+	
+    @_dmote.command(pass_context=True, name='razetitant', aliases=['trialsibrazetitan'])
+    async def _razetitant(self, context):
+        await self.bot.send_file(context.message.channel, '{}trialsibrazetitan.png'.format(self.base))
+	
+    @_dmote.command(pass_context=True, name='triumphtitan', aliases=['goldtitan'])
+    async def _triumphtitan(self, context):
+        await self.bot.send_file(context.message.channel, '{}triumphtitan.png'.format(self.base))
+	
+    @_dmote.command(pass_context=True, name='thumbdown', aliases=['uldren_taunt'])
+    async def _thumbdown(self, context):
+        await self.bot.send_file(context.message.channel, '{}uldren_taunt'.format(self.base))
+	
+    @_dmote.command(pass_context=True, name='nooo', aliases=['uldren_nooo'])
+    async def _nooo(self, context):
+        await self.bot.send_file(context.message.channel, '{}uldren_nooo'.format(self.base))
+	
+    @_dmote.command(pass_context=True, name='variks', aliases=['jedgement'])
+    async def _variks(self, context):
+        await self.bot.send_file(context.message.channel, '{}variks.png'.format(self.base))
+	
+    @_dmote.command(pass_context=True, name='hi', aliases=['variks_greetings'])
+    async def _hi(self, context):
+        await self.bot.send_file(context.message.channel, '{}variks_greetings.png'.format(self.base))
+	
+    @_dmote.command(pass_context=True, name='vogtitan', aliases=['titanvog'])
+    async def _vogtitan(self, context):
+        await self.bot.send_file(context.message.channel, '{}vogtitan.png'.format(self.base))
+	
+    @_dmote.command(pass_context=True, name='xur', aliases=['emmisary'])
+    async def _xur(self, context):
+        await self.bot.send_file(context.message.channel, '{}xur.png'.format(self.base))
+	
+    @_dmote.command(pass_context=True, name='xursday', aliases=['coins'])
+    async def _xursday(self, context):
+        await self.bot.send_file(context.message.channel, '{}xursday.png'.format(self.base))
+	
+    @_dmote.command(pass_context=True, name='crochet', aliases=['zavala_scarf'])
+    async def _crochet(self, context):
+        await self.bot.send_file(context.message.channel, '{}zavala_scarf.png'.format(self.base))
 	
 def setup(bot):
     n = Destinymotes(bot)
