@@ -12,9 +12,13 @@ class Destinymotes:
         if context.invoked_subcommand is None:
             await send_cmd_help(context)
 	
-    @_dmote.command(pass_context=True, name='zavala_faceplam', aliases=['zpalm'])
+    @_dmote.command(pass_context=True, name='zpalm', aliases=['zavala_facepalm'])
     async def _zavala_faceplam(self, context):
         await self.bot.send_file(context.message.channel, '{}zavala_facepalm.png'.format(self.base))
+	
+    @_dmote.command(pass_context=True, name='akiss', aliases=['amanda_kiss'])
+    async def _zavala_faceplam(self, context):
+        await self.bot.send_file(context.message.channel, '{}amanda_kiss.png'.format(self.base))
     
 def setup(bot):
     n = Destinymotes(bot)
