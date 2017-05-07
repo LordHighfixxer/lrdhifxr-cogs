@@ -206,7 +206,7 @@ class Destinymotes:
 	
     @_dmote.command(pass_context=True, name='nooo', aliases=['uldren_nooo'])
     async def _nooo(self, context):
-        await self.bot.send_file(context.message.channel, '{}uldren_nooo'.format(self.base))
+        await self.bot.send_file(context.message.channel, '{}uldren_nooo.png'.format(self.base))
 	
     @_dmote.command(pass_context=True, name='variks', aliases=['jedgement'])
     async def _variks(self, context):
