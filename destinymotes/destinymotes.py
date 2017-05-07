@@ -17,75 +17,75 @@ class Destinymotes:
         await self.bot.send_file(context.message.channel, '{}zavala_facepalm.png'.format(self.base))
 	
     @_dmote.command(pass_context=True, name='akiss', aliases=['amanda_kiss'])
-    async def _zavala_faceplam(self, context):
+    async def _amanda_kiss(self, context):
         await self.bot.send_file(context.message.channel, '{}amanda_kiss.png'.format(self.base))
 	
     @_dmote.command(pass_context=True, name='axetitan', aliases=['titanaxe'])
-    async def _zavala_faceplam(self, context):
+    async def _axetitan(self, context):
         await self.bot.send_file(context.message.channel, '{}axetitan.png'.format(self.base))
 	
     @_dmote.command(pass_context=True, name='babycrota', aliases=['crotababy'])
-    async def _zavala_faceplam(self, context):
+    async def _babycrota(self, context):
         await self.bot.send_file(context.message.channel, '{}babycrota.png'.format(self.base))
 	
     @_dmote.command(pass_context=True, name='banshee', aliases=['gunsmith'])
-    async def _zavala_faceplam(self, context):
+    async def _banshee(self, context):
         await self.bot.send_file(context.message.channel, '{}banshee.png'.format(self.base))
 	
     @_dmote.command(pass_context=True, name='cayde', aliases=['cayde6'])
-    async def _zavala_faceplam(self, context):
+    async def _cayde(self, context):
         await self.bot.send_file(context.message.channel, '{}cayde.png'.format(self.base))
 	
     @_dmote.command(pass_context=True, name='slycade', aliases=['cayde_sneaky'])
-    async def _zavala_faceplam(self, context):
+    async def _slycade(self, context):
         await self.bot.send_file(context.message.channel, '{}cayde_sneaky.png'.format(self.base))
 	
     @_dmote.command(pass_context=True, name='c6thumbs', aliases=['cayde_thumbsup'])
-    async def _zavala_faceplam(self, context):
+    async def _c6thumbs(self, context):
         await self.bot.send_file(context.message.channel, '{}cayde_thumbsup.png'.format(self.base))
 	
     @_dmote.command(pass_context=True, name='cayde2', aliases=['cayde62'])
-    async def _zavala_faceplam(self, context):
+    async def _cayde2(self, context):
         await self.bot.send_file(context.message.channel, '{}cayde2.png'.format(self.base))
 	
     @_dmote.command(pass_context=True, name='crotatitan', aliases=['titancrota'])
-    async def _zavala_faceplam(self, context):
+    async def _crotatitan(self, context):
         await self.bot.send_file(context.message.channel, '{}crotatitan.png'.format(self.base))
 	
     @_dmote.command(pass_context=True, name='dbtitan', aliases=['darkbladetitan'])
-    async def _zavala_faceplam(self, context):
+    async def _dbtitan(self, context):
         await self.bot.send_file(context.message.channel, '{}darkbladetitan.png'.format(self.base))
 	
     @_dmote.command(pass_context=True, name='eris', aliases=['lilmissmoans'])
-    async def _zavala_faceplam(self, context):
+    async def _eris(self, context):
         await self.bot.send_file(context.message.channel, '{}eris.png'.format(self.base))
 	
     @_dmote.command(pass_context=True, name='fallen', aliases=['vandal'])
-    async def _zavala_faceplam(self, context):
+    async def _fallen(self, context):
         await self.bot.send_file(context.message.channel, '{}fallenvandal.png'.format(self.base))
 	
     @_dmote.command(pass_context=True, name='titanbook', aliases=['fenchurch'])
-    async def _zavala_faceplam(self, context):
+    async def _titanbook(self, context):
         await self.bot.send_file(context.message.channel, '{}fenchurch.png'.format(self.base))
 	
     @_dmote.command(pass_context=True, name='ghost', aliases=['gh'])
-    async def _zavala_faceplam(self, context):
+    async def _ghost(self, context):
         await self.bot.send_file(context.message.channel, '{}ghost.png'.format(self.base))
 	
-    @_dmote.command(pass_context=True, name='ghost', aliases=['gh2'])
-    async def _zavala_faceplam(self, context):
-        await self.bot.send_file(context.message.channel, '{}ghost.png'.format(self.base))
+    @_dmote.command(pass_context=True, name='ghost2', aliases=['gh2'])
+    async def _ghost(self, context):
+        await self.bot.send_file(context.message.channel, '{}ghost2.png'.format(self.base))
 	
     @_dmote.command(pass_context=True, name='gdown', aliases=['guardian_down'])
-    async def _zavala_faceplam(self, context):
+    async def _gdown(self, context):
         await self.bot.send_file(context.message.channel, '{}guardian_down.png'.format(self.base))
 	
     @_dmote.command(pass_context=True, name='gtaunt', aliases=['guardian_taunt'])
-    async def _zavala_faceplam(self, context):
+    async def _gtaunt(self, context):
         await self.bot.send_file(context.message.channel, '{}guardian_taunt.png'.format(self.base))
 	
     @_dmote.command(pass_context=True, name='gunbro', aliases=['trialshunter'])
-    async def _zavala_faceplam(self, context):
+    async def _gunbro(self, context):
         await self.bot.send_file(context.message.channel, '{}gunbro.png'.format(self.base))
 
 def setup(bot):
