@@ -92,10 +92,6 @@ class Destinymotes:
     async def _hammerbro(self, context):
         await self.bot.send_file(context.message.channel, '{}hammerbro.png'.format(self.base))
 	
-    @_dmote.command(pass_context=True, name='hammerbro2', aliases=['hammertitan2'])
-    async def _hammerbro2(self, context):
-	await self.bot.send_file(context.message.channel, '{}hammerbro2.png'.format(self.base))
-	
     @_dmote.command(pass_context=True, name='huntersword', aliases=['hsword'])
     async def _huntersword(self, context):
 	await self.bot.send_file(context.message.channel, '{}huntersword.png'.format(self.base))
