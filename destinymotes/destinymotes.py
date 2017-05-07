@@ -84,7 +84,7 @@ class Destinymotes:
     async def _gtaunt(self, context):
         await self.bot.send_file(context.message.channel, '{}guardian_taunt.png'.format(self.base))
 	
-    @_dmote.command(pass_context=True, name='gunbro', aliases=['trialshunter'])
+    @_dmote.command(pass_context=True, name='gunbro', aliases=['thunter'])
     async def _gunbro(self, context):
         await self.bot.send_file(context.message.channel, '{}gunbro.png'.format(self.base))
 	
