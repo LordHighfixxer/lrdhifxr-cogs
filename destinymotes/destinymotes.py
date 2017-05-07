@@ -12,11 +12,11 @@ class Detinymotes:
         if context.invoked_subcommand is None:
             await send_cmd_help(context)
 
-    @dmote.command(pass_context=True, aliases=;['zpalm'])
+    @_dmote.command(pass_context=True, aliases=;['zpalm'])
     async def _zavala_faceplam(self, context):
         await self.bot.send_file(context.message.channel, '{}zavala_facepalm.png'.format(self.base))
 
-    @dmote.command(pass_context=True, aliases=['tflip'])
+    @_dmote.command(pass_context=True, aliases=['xcoin'])
     async def _xursday(self, context):
         await self.bot.send_file(context.message.channel, '{}xursday.png'.format(self.base))
     
