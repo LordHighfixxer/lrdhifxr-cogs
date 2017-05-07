@@ -6,7 +6,7 @@ class Destinymotes:
         self.bot = bot
         self.base = 'data/destinymotes/images/'
 	
-    @commands.group(pass_context=True, no_pm=False, name='dmote')
+    @commands.group(pass_context=True, pm=True, name='dmote')
     async def _dmote(self, context):
         """Calls Destiny Emotes"""
         if context.invoked_subcommand is None:
