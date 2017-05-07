@@ -18,4 +18,4 @@ class Detinymotes:
     
 def setup(bot):
     n = Destinymotes(bot)
-bot.add_cog(n)
+    bot.add_cog(n)
