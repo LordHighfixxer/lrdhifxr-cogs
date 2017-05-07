@@ -202,7 +202,7 @@ class Destinymotes:
 	
     @_dmote.command(pass_context=True, name='thumbdown', aliases=['uldren_taunt'])
     async def _thumbdown(self, context):
-        await self.bot.send_file(context.message.channel, '{}uldren_taunt'.format(self.base))
+        await self.bot.send_file(context.message.channel, '{}uldren_taunt.png'.format(self.base))
 	
     @_dmote.command(pass_context=True, name='nooo', aliases=['uldren_nooo'])
     async def _nooo(self, context):
