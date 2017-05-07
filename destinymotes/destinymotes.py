@@ -73,7 +73,7 @@ class Destinymotes:
         await self.bot.send_file(context.message.channel, '{}ghost.png'.format(self.base))
 	
     @_dmote.command(pass_context=True, name='ghost2', aliases=['gh2'])
-    async def _ghost(self, context):
+    async def _ghost2(self, context):
         await self.bot.send_file(context.message.channel, '{}ghost2.png'.format(self.base))
 	
     @_dmote.command(pass_context=True, name='gdown', aliases=['guardian_down'])
@@ -87,7 +87,91 @@ class Destinymotes:
     @_dmote.command(pass_context=True, name='gunbro', aliases=['trialshunter'])
     async def _gunbro(self, context):
         await self.bot.send_file(context.message.channel, '{}gunbro.png'.format(self.base))
-
+	
+    @_dmote.command(pass_context=True, name='hammerbro', aliases=['hammertitan'])
+    async def _hammerbro(self, context):
+	await self.bot.send_file(context.message.channel, '{}hammerbro.png'.format(self.base))
+	
+    @_dmote.command(pass_context=True, name='hammerbro2', aliases=['hammertitan2'])
+    async def _hammerbro2(self, context):
+	await self.bot.send_file(context.message.channel, '{}hammerbro2.png'.format(self.base))
+	
+    @_dmote.command(pass_context=True, name='huntersword', aliases=['hsword'])
+    async def _huntersword(self, context):
+	await self.bot.send_file(context.message.channel, '{}huntersword.png'.format(self.base))
+	
+    @_dmote.command(pass_context=True, name='ibtitan', aliases=['bannertitan'])
+    async def _ibtitan(self, context):
+	await self.bot.send_file(context.message.channel, '{}ibtitan.png'.format(self.base))
+	
+    @_dmote.command(pass_context=True, name='ikbook', aliases=['ikora_book'])
+    async def _ikbook(self, context):
+	await self.bot.send_file(context.message.channel, '{}ikora_book.png'.format(self.base))
+	
+    @_dmote.command(pass_context=True, name='iktaunt', aliases=['ikora_taunt'])
+    async def _iktaunt(self, context):
+	await self.bot.send_file(context.message.channel, '{}ikora_taunt.png'.format(self.base))
+	
+    @_dmote.command(pass_context=True, name='jujulock', aliases=['warlockjuju'])
+    async def _jujulock(self, context):
+	await self.bot.send_file(context.message.channel, '{}jujulock.png'.format(self.base))
+	
+    @_dmote.command(pass_context=True, name='lastword', aliases=['shin'])
+    async def _lastword(self, context):
+	await self.bot.send_file(context.message.channel, '{}lastword.png'.format(self.base))
+	
+    @_dmote.command(pass_context=True, name='marasov', aliases=['queen'])
+    async def _marasov(self, context):
+	await self.bot.send_file(context.message.channel, '{}marasov.png'.format(self.base))
+	
+    @_dmote.command(pass_context=True, name='petra', aliases=['petrareef'])
+    async def _petra(self, context):
+	await self.bot.send_file(context.message.channel, '{}petra.png'.format(self.base))
+	
+    @_dmote.command(pass_context=True, name='rahool', aliases=['egrampile'])
+    async def _rahool(self, context):
+	await self.bot.send_file(context.message.channel, '{}rahool.png'.format(self.base))
+	
+    @_dmote.command(pass_context=True, name='trollhool', aliases=['rahooltroll'])
+    async def _trollhool(self, context):
+	await self.bot.send_file(context.message.channel, '{}rahooltroll.png'.format(self.base))
+	
+    @_dmote.command(pass_context=True, name='razetitan', aliases=['razelighter'])
+    async def _razetitan(self, context):
+	await self.bot.send_file(context.message.channel, '{}razetitan.png'.format(self.base))
+	
+    @_dmote.command(pass_context=True, name='saint14', aliases=['st14'])
+    async def _saint14(self, context):
+	await self.bot.send_file(context.message.channel, '{}saint14.png'.format(self.base))
+	
+    @_dmote.command(pass_context=True, name='saladin', aliases=['saladinforge'])
+    async def _saladin(self, context):
+	await self.bot.send_file(context.message.channel, '{}saladin.png'.format(self.base))
+	
+    @_dmote.command(pass_context=True, name='nono', aliases=['saladin_no_no'])
+    async def _nono(self, context):
+	await self.bot.send_file(context.message.channel, '{}saladin_no_no.png'.format(self.base))
+	
+    @_dmote.command(pass_context=True, name='amazing', aliases=['shaxx_amazing'])
+    async def _amazing(self, context):
+	await self.bot.send_file(context.message.channel, '{}shaxx_amazing.png'.format(self.base))
+	
+    @_dmote.command(pass_context=True, name='haha', aliases=['shaxx_laugh'])
+    async def _haha(self, context):
+	await self.bot.send_file(context.message.channel, '{}shaxx_laugh.png'.format(self.base))
+	
+    @_dmote.command(pass_context=True, name='sivahunter', aliases=['sivah'])
+    async def _sivahunter(self, context):
+	await self.bot.send_file(context.message.channel, '{}sivahunter.png'.format(self.base))
+	
+    @_dmote.command(pass_context=True, name='sleeper', aliases=['sleeperlock'])
+    async def _sleeper(self, context):
+	await self.bot.send_file(context.message.channel, '{}sleeperlock.png'.format(self.base))
+	
+    @_dmote.command(pass_context=True, name='sniper', aliases=['sniperlock'])
+    async def _sniper(self, context):
+	await self.bot.send_file(context.message.channel, '{}sniperlock.png'.format(self.base))
+	
 def setup(bot):
     n = Destinymotes(bot)
     bot.add_cog(n)
