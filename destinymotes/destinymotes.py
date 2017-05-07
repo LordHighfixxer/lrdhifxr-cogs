@@ -10,7 +10,7 @@ class Detinymotes:
     async def _dmote(self, context):
         """Calls Destiny Emotes"""
         if context.invoked_subcommand is None:
-        await send_cmd_help(context)
+		await send_cmd_help(context)
 
     @dmote.command(pass_context=True, aliases=;['zpalm'])
     async def _zavala_faceplam(self, context):
