@@ -63,7 +63,31 @@ class Destinymotes:
     @_dmote.command(pass_context=True, name='fallen', aliases=['vandal'])
     async def _zavala_faceplam(self, context):
         await self.bot.send_file(context.message.channel, '{}fallenvandal.png'.format(self.base))
-    
+	
+    @_dmote.command(pass_context=True, name='titanbook', aliases=['fenchurch'])
+    async def _zavala_faceplam(self, context):
+        await self.bot.send_file(context.message.channel, '{}fenchurch.png'.format(self.base))
+	
+    @_dmote.command(pass_context=True, name='ghost', aliases=['gh'])
+    async def _zavala_faceplam(self, context):
+        await self.bot.send_file(context.message.channel, '{}ghost.png'.format(self.base))
+	
+    @_dmote.command(pass_context=True, name='ghost', aliases=['gh2'])
+    async def _zavala_faceplam(self, context):
+        await self.bot.send_file(context.message.channel, '{}ghost.png'.format(self.base))
+	
+    @_dmote.command(pass_context=True, name='gdown', aliases=['guardian_down'])
+    async def _zavala_faceplam(self, context):
+        await self.bot.send_file(context.message.channel, '{}guardian_down.png'.format(self.base))
+	
+    @_dmote.command(pass_context=True, name='gtaunt', aliases=['guardian_taunt'])
+    async def _zavala_faceplam(self, context):
+        await self.bot.send_file(context.message.channel, '{}guardian_taunt.png'.format(self.base))
+	
+    @_dmote.command(pass_context=True, name='gunbro', aliases=['trialshunter'])
+    async def _zavala_faceplam(self, context):
+        await self.bot.send_file(context.message.channel, '{}gunbro.png'.format(self.base))
+
 def setup(bot):
     n = Destinymotes(bot)
     bot.add_cog(n)
