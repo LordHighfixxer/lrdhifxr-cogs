@@ -1,6 +1,6 @@
 from discord.ext import commands
 
-class Detinymotes:
+class Destinymotes:
     def __init__(self, bot):
         self.bot = bot
         self.base = 'data/destinymotes/images/'
