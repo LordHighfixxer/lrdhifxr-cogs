@@ -11,7 +11,7 @@ class Dadjoke():
     async def _dadjoke(self, ctx):
         """Gets a random cat fact"""
         async with aiohttp.get("https://icanhazdadjoke.com/") as cfget:
-            fact_json = accept application/json()
+            fact_json = await application/json()
         fact = fact_json["facts"][0]
         await self.bot.say("Ok " + ctx.message.author.mention + ", here is a dad joke.\n" + fact)
 
