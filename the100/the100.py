@@ -14,7 +14,7 @@ class The100:
         headers = {
 			'Authorization': 'Token token="hLeSA0v7Hahke71qp1Hs2Q"',
 		}
-        requests.get('https://www.the100.io/api/v1//groups/4311/gaming_sessions', headers=headers) as r:
+	requests.get('https://www.the100.io/api/v1//groups/4311/gaming_sessions', headers=headers) as r:
 		result = await r.text()
 		await self.bot.say('`' + result + '`')
 
