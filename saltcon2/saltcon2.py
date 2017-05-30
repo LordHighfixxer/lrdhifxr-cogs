@@ -83,8 +83,8 @@ class SALTCON2:
                         "exist at this time.")
             instructions = ("- Partipaction in Crucible matches is encouraged\n"
                             "- Remain vigilant of Guardian trolls\n"
-			    "- Think about saying nice things about Cybil\n"
-                            "- Report all suspicious Admin activity")
+			    "- Think about saying nice things to Master Rahool\n"
+                            "- Report all suspicious activity by Cayde-6")
         elif level == '4':
             color = 0x00ff00
             thumbnail_url = 'http://i.imgur.com/siIWL5V.gif'
@@ -93,8 +93,8 @@ class SALTCON2:
             instructions = ("- Inhale deeply through your nose and "
                             "count to 5\n"
                             "- Take short breaks between missions\n"
-			    "- Avoid allowing Numbah to be fireteam lead\n"
-                            "- Do not encourage Zach")
+			    "- Avoid allowing Trials unless well rested\n"
+                            "- Do not encourage Warlocks to attempt jump puzzles")
         elif level == '3':
             color = 0xffff00
             thumbnail_url = 'http://i.imgur.com/E71VSBE.gif'
@@ -111,8 +111,8 @@ class SALTCON2:
             subtitle = 'Sodium levels are approaching critical mass'
             instructions = ("- Avoid Nightfall at all costs\n"
                             "- Mute all hostile voice channels\n"
-			    "- Call Peejs <omitted family member> and tell her you love her\n"
-			    "- Irritate the grass before it is too late\n"
+			    "- Call Hideo's mom and tell her you love her\n"
+			    "- Start stashing your favorite gear away\n"
                             "- Queue up some relaxing Radiohead music")
         elif level == '1':
             color = 0xffffff
@@ -120,7 +120,7 @@ class SALTCON2:
             author = "This outpost is at SALTCON LEVEL {}.".format(level)
             subtitle = 'The Darkness is upon us; destruction IMMINENT.'
             instructions = ("- Do not participate in any Crucible game modes\n"
-                            "- Avoid speaking to the HigeherUps\n"
+                            "- Avoid speaking to the anyone in charge\n"
                             "- Evacuate the outpost until the "
                             "all-clear is given")
 
