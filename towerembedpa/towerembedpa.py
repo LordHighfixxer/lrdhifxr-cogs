@@ -30,6 +30,7 @@ class TowerEmbedPA:
             "This is Master Rahool. Apprentice DeSalnus, please return to the archives at once, your engrams are melting a table!",
             "Fireteam Swift Resolution, you have been reassigned. Report to the wall. Zavala out.",
             "Fire team The Vanguard Don't Care What We Call Ourselves Either, report in - Zavalla",
+            "Attention: lumpy pudding is against the rules.",
             "Attention we have reports of a fireteam leader involuntarily extracting Guardians to orbit. Please report these incidents to the Vanguard immediately."]
 
     @commands.command(name="towercontact", aliases=[""])
