@@ -125,7 +125,7 @@ class The100:
                     msg += "Users: " + ", ".join(users[:-2] + [" and ".join(users[-2:])]) + "\n"
                 elif y == "start_time":
                     time = "".join(str(x[y]).rsplit(":", 1))
-                    msg += "Start time: " + " ".join((time[:-9] + " PT " + time[-5:]).split("T")) + "\n"
+                    msg += "Start time: " + " ".join((time[:-9] + " Pacific " + time[-5:]).split("T")) + "\n"
                 elif y == "platform_formatted":
                     msg += "Platform: " + x[y] + "\n"
 
