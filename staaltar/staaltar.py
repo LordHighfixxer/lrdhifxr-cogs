@@ -42,4 +42,4 @@ class staaltar:
 
 
 def setup(bot):
-    bot.add_cog(staaltar(bot))
+     bot.add_cog(staaltar(bot))
