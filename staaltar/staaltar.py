@@ -25,7 +25,7 @@ class staaltar:
 
         staaltar = choice(staaltar)
 
-        staaltarsay = ["KNEEL BEFORE THE STAALTAR!!!", "Staaltar Adulation Protocol Engaged"]
+        staaltarsay = ["KNEEL BEFORE THE STAALTAR!!!", "MAKE AMERICA WOO AGAIN", "Staaltar Adulation Protocol Engaged"]
         staaltarsay = choice(staaltarsay)
 
         colour = ''.join([choice('0123456789ABCDEF') for x in range(6)])
