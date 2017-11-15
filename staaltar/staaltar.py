@@ -21,7 +21,7 @@ class staaltar:
                "https://i.imgur.com/SRQYQjy.jpg",
                "https://i.imgur.com/iQ41PLN.png",
                "https://i.imgur.com/XMoe9ER.png",
-               "https://i.imgur.com/QmZLiNf.png",
+               "https://i.imgur.com/PJFxpj0.jpg",
                "https://i.imgur.com/hIPJO8M.png"]
 
         staaltar = choice(staaltar)
