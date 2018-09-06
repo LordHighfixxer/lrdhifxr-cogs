@@ -80,7 +80,7 @@ class STREAMCON:
             thumbnail_url = 'http://i.imgur.com/uTPeW7N.gif'
             author = "Fixxers Channel is at STREAMCON LEVEL {}.".format(level)
             subtitle = ("No known threats to a normal stream time exist at this time.")
-            instructions = ("- If you are Matt get out the oil\n"
+            instructions = ("- If you are Matt get oiled up and ready to go\n"
                             "- Start counting your Tributes\n"
 			    "- Wait for Fixxer to Fixx the Matches\n"
                             "- Report all suspicious activity by DJ Woo")
