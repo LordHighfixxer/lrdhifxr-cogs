@@ -69,7 +69,7 @@ class STREAMCON:
                                    member.display_name)
         else:
             await self.bot.say("Not a valid STREAMCON level. Haven't "
-                               "you seen War Games Guardian?")
+                               "you seen War Games Doofus?")
 
     async def post_STREAMCON(self, level, nick):
 
@@ -78,51 +78,48 @@ class STREAMCON:
         if level == '5':
             color = 0x0080ff
             thumbnail_url = 'http://i.imgur.com/uTPeW7N.gif'
-            author = "This outpost is at STREAMCON LEVEL {}.".format(level)
-            subtitle = ("No known darkness induced NaCl related threats "
-                        "exist at this time.")
-            instructions = ("- Partipaction in Crucible matches is encouraged\n"
-                            "- Remain vigilant of Guardian trolls\n"
-			    "- Think about saying nice things to Master Rahool\n"
-                            "- Report all suspicious activity by Cayde-6")
+            author = "Fixxers Channel is at STREAMCON LEVEL {}.".format(level)
+            subtitle = ("No known threats to a normal stream time exist at this time.")
+            instructions = ("- If you are Matt get out the oil\n"
+                            "- Start counting your Tributes\n"
+			    "- Wait for Fixxer to Fixx the Matches\n"
+                            "- Report all suspicious activity by DJ Woo")
         elif level == '4':
             color = 0x00ff00
             thumbnail_url = 'http://i.imgur.com/siIWL5V.gif'
-            author = "This outpost is at STREAMCON LEVEL {}.".format(level)
-            subtitle = 'Trace amounts of sodium have been detected.'
-            instructions = ("- Inhale deeply through your nose and "
-                            "count to 5\n"
-                            "- Take short breaks between missions\n"
-			    "- Avoid allowing Trials unless well rested\n"
-                            "- Do not encourage Warlocks to attempt jump puzzles")
+            author = "Fixxers Channelis at STREAMCON LEVEL {}.".format(level)
+            subtitle = 'There is a slight threat to the stream'
+            instructions = ("- If you are Matt its ok to get all oiled up probably\n"
+                            "- Probably check in at stream time to be sure\n"
+			    "- No need to make alternative plans yet\n"
+                            "- Stay tuned for updates")
         elif level == '3':
             color = 0xffff00
             thumbnail_url = 'http://i.imgur.com/E71VSBE.gif'
-            author = "This outpost is at STREAMCON LEVEL {}.".format(level)
-            subtitle = 'Sodium levels may exceed Tower exposure limits.'
-            instructions = ("- Use extreme caution when playing Crucible matches\n"
-                            "- Log off non-essential communication channels\n"
-			    "- Stay out of Trials of Osiris\n"
+            author = "Fixxers Channel is at STREAMCON LEVEL {}.".format(level)
+            subtitle = 'There is a moderate threat to the stream.'
+            instructions = ("- 50-50 chance of the stream happening\n"
+                            "- its okay to look up movie times\n"
+			    "- or make dinenr plans\n"
                             "- Put on your big boy pants")
         elif level == '2':
             color = 0xff0000
             thumbnail_url = 'http://i.imgur.com/PxKhT7h.gif'
-            author = "This outpost is at STREAMCON LEVEL {}.".format(level)
-            subtitle = 'Sodium levels are approaching critical mass'
-            instructions = ("- Avoid Nightfall at all costs\n"
-                            "- Mute all hostile voice channels\n"
-			    "- Call Hideo's mom and tell her you love her\n"
-			    "- Start stashing your favorite gear away\n"
-                            "- Queue up some relaxing Radiohead music")
+            author = "Fixxers Channel is at STREAMCON LEVEL {}.".format(level)
+            subtitle = 'There is a SIGNIFICANT threat to the stream'
+            instructions = ("- We are pretty sure the stream is not happening\n"
+                            "- Queue up something to binge on Netflix\n"
+			    "- Matt should close the baby oil lid\n"
+			    "- Alternate Stream planning is encouraged\n"
+                            "- It will be okay but probably tomorrow")
         elif level == '1':
             color = 0xffffff
             thumbnail_url = 'http://i.imgur.com/wzXSNWi.gif'
-            author = "This outpost is at STREAMCON LEVEL {}.".format(level)
-            subtitle = 'The Darkness is upon us; destruction IMMINENT.'
-            instructions = ("- Do not participate in any Crucible game modes\n"
-                            "- Avoid speaking to the anyone in charge\n"
-                            "- Evacuate the outpost until the "
-                            "all-clear is given")
+            author = "Fixxers Channel is at STREAMCON LEVEL {}.".format(level)
+            subtitle = 'The Stream is POSITIVELY not happening'
+            instructions = ("- Conserve all baby oil and cooking grease\n"
+                            "- You should abosultely find somethign else to do\n"
+                            "- There will be no further updates until an all clear is sounded.")
 
         if level in self.valid_STREAMCONs:
             embed = discord.Embed(title="\u2063", color=color)
