@@ -2,6 +2,6 @@
     "AUTHOR" : "Fjall#7112",
     "INSTALL_MSG" : "The STREAMCON Action System is a public service brought to you by KFC",
     "NAME" : "STREAMCON",
-    "SHORT" : "STREAMCON Action System",
+    "SHORT" : "STREAMCON Action System V1.1",
     "DESCRIPTION" : "Salt level announcment system for your Discord server based on work by Flap-jack, version 2 tailored for my Stream Status"
 }
