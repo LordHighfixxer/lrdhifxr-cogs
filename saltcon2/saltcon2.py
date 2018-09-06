@@ -87,7 +87,7 @@ class STREAMCON:
         elif level == '4':
             color = 0x00ff00
             thumbnail_url = 'http://i.imgur.com/siIWL5V.gif'
-            author = "Fixxers Channelis at STREAMCON LEVEL {}.".format(level)
+            author = "Fixxers Channel is at STREAMCON LEVEL {}.".format(level)
             subtitle = 'There is a slight threat to the stream'
             instructions = ("- If you are Matt its ok to get all oiled up probably\n"
                             "- Probably check in at stream time to be sure\n"
@@ -100,7 +100,7 @@ class STREAMCON:
             subtitle = 'There is a moderate threat to the stream.'
             instructions = ("- 50-50 chance of the stream happening\n"
                             "- its okay to look up movie times\n"
-			    "- or make dinenr plans\n"
+			    "- or make dinner plans\n"
                             "- Put on your big boy pants")
         elif level == '2':
             color = 0xff0000
@@ -111,14 +111,14 @@ class STREAMCON:
                             "- Queue up something to binge on Netflix\n"
 			    "- Matt should close the baby oil lid\n"
 			    "- Alternate Stream planning is encouraged\n"
-                            "- It will be okay but probably tomorrow")
+                            "- It will be okay but probably not until tomorrow")
         elif level == '1':
             color = 0xffffff
             thumbnail_url = 'http://i.imgur.com/wzXSNWi.gif'
             author = "Fixxers Channel is at STREAMCON LEVEL {}.".format(level)
             subtitle = 'The Stream is POSITIVELY not happening'
             instructions = ("- Conserve all baby oil and cooking grease\n"
-                            "- You should abosultely find somethign else to do\n"
+                            "- You should abosultely find something else to do\n"
                             "- There will be no further updates until an all clear is sounded.")
 
         if level in self.valid_STREAMCONs:
