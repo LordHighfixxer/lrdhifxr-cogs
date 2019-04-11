@@ -82,7 +82,7 @@ class STREAMCON:
             subtitle = ("I am either at work or have something scheduled prior to the stream")
             instructions = ("- Expect this status to change later in the day\n"
                             "- Start counting your Tributes\n"
-			    "- Stream proceedures will continue as planned\n"
+			    "- Stream procedures will continue as planned\n"
                             "- Report all suspicious activity by DJ Woo")
         elif level == '4':
             color = 0x00ff00
