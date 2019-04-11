@@ -77,7 +77,7 @@ class STREAMCON:
 
         if level == '5':
             color = 0x0080ff
-            thumbnail_url = 'http://i.imgur.com/ap1Es2U.gif'
+            thumbnail_url = 'http://i.imgur.com/e2CK3om.gif'
             author = "Stream status: SCHEDULED HOLD.".format(level)
             subtitle = ("I am either at work or have something scheduled prior to the stream")
             instructions = ("- Expect this status to change later in the day\n"
@@ -86,7 +86,7 @@ class STREAMCON:
                             "- Report all suspicious activity by DJ Woo")
         elif level == '4':
             color = 0x00ff00
-            thumbnail_url = 'http://i.imgur.com/UGXYAXn.gif'
+            thumbnail_url = 'http://i.imgur.com/TMBq2i0.gif'
             author = "Stream status: GO.".format(level)
             subtitle = 'Stream should launch as scheduled'
             instructions = ("- Strap in and buckle up\n"
@@ -96,7 +96,7 @@ class STREAMCON:
                             "- Stay tuned to Discord or Twitter for updates")
         elif level == '3':
             color = 0xffff00
-            thumbnail_url = 'http://i.imgur.com/Oi6VHKw.gif'
+            thumbnail_url = 'http://i.imgur.com/uW1AZQN.gifvf'
             author = "Stream status: HOLD.".format(level)
             subtitle = 'Something has come up but it should be ok.'
             instructions = ("- Stream has a good chance of happening\n"
@@ -106,7 +106,7 @@ class STREAMCON:
                             "- Put on your big boy pants")
         elif level == '2':
             color = 0xff0000
-            thumbnail_url = 'http://i.imgur.com/34iRGiS.gif'
+            thumbnail_url = 'http://i.imgur.com/stCtTIe.gif'
             author = "Stream status: Engineering HOLD.".format(level)
             subtitle = 'There is a SIGNIFICANT obstacle to streaming'
             instructions = ("- We are pretty sure the stream is not happening\n"
@@ -115,7 +115,7 @@ class STREAMCON:
                             "- Look for additional updates for Go or No-Go")
         elif level == '1':
             color = 0xffffff
-            thumbnail_url = 'http://i.imgur.com/mDsJIcd.gif'
+            thumbnail_url = 'http://i.imgur.com/U44wmN3.gif'
             author = "Stream status: SCRUBBED.".format(level)
             subtitle = 'The Stream is POSITIVELY not happening'
             instructions = ("- Stand down from all stream launch plans\n"
