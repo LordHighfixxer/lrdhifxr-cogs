@@ -79,7 +79,7 @@ class STREAMCON:
             color = 0x0080ff
             thumbnail_url = 'http://i.imgur.com/ap1Es2U.gif'
             author = "Stream status: SCHEDULED HOLD.".format(level)
-            subtitle = ("I am either at work or at something else scheduled prior ot the stream")
+            subtitle = ("I am either at work or have something scheduled prior to the stream")
             instructions = ("- Expect this status to change later in the day\n"
                             "- Start counting your Tributes\n"
 			    "- Stream proceedures will continue as planned\n"
@@ -118,7 +118,7 @@ class STREAMCON:
             thumbnail_url = 'http://i.imgur.com/mDsJIcd.gif'
             author = "Stream status: SCRUBBED.".format(level)
             subtitle = 'The Stream is POSITIVELY not happening'
-            instructions = ("- Stand down from all launch plans\n"
+            instructions = ("- Stand down from all stream launch plans\n"
                             "- You should absolutely find something else to do\n"
                             "- There will be no further updates.")
 
@@ -130,7 +130,7 @@ class STREAMCON:
             embed.set_footer(text="Authority: {}".format(nick))
             await self.bot.say(embed=embed)
         else:
-            await self.bot.say("There was an error due to Vex interference Guardian.")
+            await self.bot.say("There was an error due to a downrange tracking system failure.")
 
     def load_settings(self, server):
         self.settings = dataIO.load_json(self.settings_path)
