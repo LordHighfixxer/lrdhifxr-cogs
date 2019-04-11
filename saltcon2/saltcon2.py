@@ -73,55 +73,54 @@ class STREAMCON:
 
     async def post_STREAMCON(self, level, nick):
 
-        icon_url = 'http://i.imgur.com/MfDcOEU.gif'
+        icon_url = 'https://i.imgur.com/7psx4VV.gif'
 
         if level == '5':
             color = 0x0080ff
-            thumbnail_url = 'http://i.imgur.com/uTPeW7N.gif'
-            author = "Fixxers Channel is at STREAMCON LEVEL {}.".format(level)
-            subtitle = ("No known threats to a normal stream time exist at this time.")
-            instructions = ("- If you are Matt get oiled up and ready to go\n"
+            thumbnail_url = 'http://i.imgur.com/ap1Es2U.gif'
+            author = "Stream status: SCHEDULED HOLD.".format(level)
+            subtitle = ("I am either at work or at something else scheduled prior ot the stream")
+            instructions = ("- Expect this status to change later in the day\n"
                             "- Start counting your Tributes\n"
-			    "- Wait for Fixxer to Fixx the Matches\n"
+			    "- Stream proceedures will continue as planned\n"
                             "- Report all suspicious activity by DJ Woo")
         elif level == '4':
             color = 0x00ff00
-            thumbnail_url = 'http://i.imgur.com/siIWL5V.gif'
-            author = "Fixxers Channel is at STREAMCON LEVEL {}.".format(level)
-            subtitle = 'There is a slight threat to the stream'
-            instructions = ("- If you are Matt its ok to get all oiled up probably\n"
-                            "- Probably check in after work to be sure\n"
-			    "- No need to make alternative plans\n"
-			    "- This is almost always the condition during my work day\n"
-                            "- Stay tuned to Discord for updates")
+            thumbnail_url = 'http://i.imgur.com/UGXYAXn.gif'
+            author = "Stream status: GO.".format(level)
+            subtitle = 'Stream should launch as scheduled'
+            instructions = ("- Strap in and buckle up\n"
+                            "- Begin propellant load\n"
+			    "- Transfer guidance control to Eddie\n"
+			    "- I usually switch to this status once I am out of work\n"
+                            "- Stay tuned to Discord or Twitter for updates")
         elif level == '3':
             color = 0xffff00
-            thumbnail_url = 'http://i.imgur.com/E71VSBE.gif'
-            author = "Fixxers Channel is at STREAMCON LEVEL {}.".format(level)
-            subtitle = 'There is a moderate threat to the stream.'
-            instructions = ("- 50-50 chance of the stream happening\n"
-                            "- its okay to look up movie times\n"
-			    "- or make dinner plans\n"
+            thumbnail_url = 'http://i.imgur.com/Oi6VHKw.gif'
+            author = "Stream status: HOLD.".format(level)
+            subtitle = 'Something has come up but it should be ok.'
+            instructions = ("- Stream has a good chance of happening\n"
+                            "- This is probably just precautionary\n"
 			    "- Expect additional updates\n"
+			    "- Feel free to nag me for one too\n"
                             "- Put on your big boy pants")
         elif level == '2':
             color = 0xff0000
-            thumbnail_url = 'http://i.imgur.com/PxKhT7h.gif'
-            author = "Fixxers Channel is at STREAMCON LEVEL {}.".format(level)
-            subtitle = 'There is a SIGNIFICANT threat to the stream'
+            thumbnail_url = 'http://i.imgur.com/34iRGiS.gif'
+            author = "Stream status: Engineering HOLD.".format(level)
+            subtitle = 'There is a SIGNIFICANT obstacle to streaming'
             instructions = ("- We are pretty sure the stream is not happening\n"
                             "- Queue up something to binge on Netflix\n"
-			    "- Matt should close the baby oil lid\n"
-			    "- Alternate stream planning is encouraged\n"
-                            "- Look for additional updates closer to stream time")
+			    "- Check StreamAlerts for who else is live\n"
+                            "- Look for additional updates for Go or No-Go")
         elif level == '1':
             color = 0xffffff
-            thumbnail_url = 'http://i.imgur.com/wzXSNWi.gif'
-            author = "Fixxers Channel is at STREAMCON LEVEL {}.".format(level)
+            thumbnail_url = 'http://i.imgur.com/mDsJIcd.gif'
+            author = "Stream status: SCRUBBED.".format(level)
             subtitle = 'The Stream is POSITIVELY not happening'
-            instructions = ("- Conserve all baby oil and cooking grease\n"
+            instructions = ("- Stand down from all launch plans\n"
                             "- You should absolutely find something else to do\n"
-                            "- There will be no further updates until an all clear is sounded.")
+                            "- There will be no further updates.")
 
         if level in self.valid_STREAMCONs:
             embed = discord.Embed(title="\u2063", color=color)
