@@ -96,7 +96,7 @@ class STREAMCON:
                             "- Stay tuned to Discord or Twitter for updates")
         elif level == '3':
             color = 0xffff00
-            thumbnail_url = 'http://i.imgur.com/uW1AZQN.gifvf'
+            thumbnail_url = 'http://i.imgur.com/uW1AZQN.gif'
             author = "Stream status: HOLD.".format(level)
             subtitle = 'Something has come up but it should be ok.'
             instructions = ("- Stream has a good chance of happening\n"
