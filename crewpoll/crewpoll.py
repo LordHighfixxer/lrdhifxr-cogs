@@ -145,10 +145,10 @@ class NewCrewPoll():
 
     # Override NewPoll methods for starting and stopping polls
     async def start(self):
-        msg = "**POLL STARTED!**\n\n{}\n\n".format(self.question)
+        msg = "**ROLL CALL!**\n\n{}\n\n".format(self.question)
         for id, data in self.answers.items():
             msg += "{}\n".format(data["ANSWER"])
-        msg += ("\nSelect the number to vote!"
+        msg += ("\nSelect the number of your position to indicate you will be present"
                 "\nPoll closes in {} seconds.".format(self.duration))
         self.message = await self.client.send_message(self.channel, msg)
         for emoji in self.emojis:
